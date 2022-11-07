@@ -1,5 +1,6 @@
 import { Nav } from "./nav";
 import styles from "./module-css/head.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Head() {
     return (

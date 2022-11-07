@@ -1,6 +1,12 @@
+:root {
+  --container_kids-primary: #06D6A0;
+  --container_kids-secondary: #048A81;
+  --container_kids-tertiary: #F8F32B;
+}
 .container_cards {
-  background-color:darkcyan ;
+  background-color: black;
   display:flex;
+  width: 100%;
 }
 
 .card {
