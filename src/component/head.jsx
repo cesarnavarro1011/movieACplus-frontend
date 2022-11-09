@@ -32,7 +32,7 @@ export default function Head() {
                         <NavIphone title="series"/>
                     </a>
                     
-                    <li className={styles.nav_items_opcions +" "+styles.item_account}>account</li>
+                    <li className={styles.nav_items_opcions +" "+styles.item_account}>Account</li>
                 </ul>
 
                 <a href="g" className={styles.linklogo}>

@@ -104,14 +104,13 @@
     /* background-color: blue; */
     position: relative;
     width: 19vh;
-    height: 10vh;
+    height: 10.2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     list-style: none;
     margin-right: 0rem;
-
 }
 
 .a_Movie, .a_series {
@@ -146,12 +145,15 @@ ul .ul_items {
 
 .item_account {
     font-size: 1rem;
-
+    cursor: pointer;
+    background:  #e3b705a5;
+    border-bottom: 2px solid  hsl(48, 100%, 28%);
 }
 
 .nav_items_opcions:hover {
     background-color: rgb(13, 16, 15);
     color: #E3B505;
+    border-bottom: 2px solid  hsla(48, 100%, 31%, 0);
 }
 
 .ul_items li :hover {
