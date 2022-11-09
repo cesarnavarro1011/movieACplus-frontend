@@ -61,9 +61,9 @@
 .logo {
     order: 1;
     font-size: 2rem;
-    margin: 1rem;
-    color: #00ff55d8;
-    width: 38vh;
+    margin: 1.5rem;
+    color: #E3B505;
+    width: 49vh;
 }
 
 .linklogo {
@@ -72,28 +72,28 @@
 
 .search {
     height: 4vh;
-    width: 22vh;
+    width: 42vh;
     margin: 2rem 4rem;
     border-radius: 5px;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-style: none;
     padding: 1rem;
-    border: white;
+    border: rgb(89, 85, 85);
     border-style: solid;
     border-width: 1px;
 }
 
-.search:hover {
-    box-shadow: 0 0 0 .15vw rgb(5, 255, 176);
-    outline:none;
-    border :none;
+.search:focus {
+    box-shadow: 0 0 0 .15vw #E3B505;
+    outline: #E3B505;
     border-width: 1px;
 }
 
 .menu_items {
     order: 2;
     display: flex;
+    margin-right: 1rem;
 }
 
 .nav_items_options_iphone {
@@ -103,28 +103,31 @@
 .nav_items_opcions {
     /* background-color: blue; */
     position: relative;
-    width: 12vh;
-    height: 7vh;
+    width: 19vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     list-style: none;
+    margin-right: 0rem;
+
 }
 
 .a_Movie, .a_series {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
 }
 
 ul .ul_items {
+    display: none;
     background-color: rgb(0, 0, 0);
     position: absolute;
     border-radius: 10px;
-    width: 13vh;
-    height: 27vh;
-    top: 6.9vh;
+    width: 24vh;
+    height: 40vh;
+    top: 10vh;
     list-style: none;
     padding: 0rem 1.5rem;
     cursor: pointer;
@@ -136,7 +139,7 @@ ul .ul_items {
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    padding: 11px 0;
+    padding: 11px 0rem;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -148,6 +151,7 @@ ul .ul_items {
 
 .nav_items_opcions:hover {
     background-color: rgb(13, 16, 15);
+    color: #E3B505;
 }
 
 .ul_items li :hover {
@@ -156,6 +160,10 @@ ul .ul_items {
 
 .item a :hover {
     background-color: rgb(0, 0, 0);
+}
+
+.nav_items_opcions:hover > .ul_items {
+    display: block;
 }
 
 /* ............//// Showcase styling ////......... */
