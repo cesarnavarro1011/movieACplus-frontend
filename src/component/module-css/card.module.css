@@ -3,6 +3,11 @@
   --container_kids-secondary: #048A81;
   --container_kids-tertiary: #F8F32B;
 }
+
+.link_card_movies {
+  text-decoration: none;
+}
+
 .container_cards {
   background-color: black;
   display:flex;

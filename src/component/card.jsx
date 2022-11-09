@@ -3,6 +3,7 @@ import styles from "./module-css/card.module.css";
 export function Card({movie}) {
     const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
     return (
+        <a className={styles.link_card_movies} href="fc">
         <div className={styles.container_cards}>
             <div className={styles.card}> 
                 <img class={styles.card_img} src={imageUrl} alt={movie.title}/>
@@ -14,5 +15,7 @@ export function Card({movie}) {
                 </div>
             </div>
         </div> 
+
+        </a>
     );
 } 

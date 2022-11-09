@@ -2,7 +2,7 @@ import movies from "../movies.json";
 import { Card } from "./card";
 import styles from "./module-css/grid.module.css";
 
-export default function Movies() {
+export default function ListMovies() {
     return (
         <ul className={styles.grid}>
         

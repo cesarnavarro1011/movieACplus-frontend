@@ -64,7 +64,7 @@
     margin: 0 16rem 0 0rem;
     color: #E3B505;
     width: 22vh;
-    background-color: rgb(146, 2, 2);
+    /* background-color: rgb(146, 2, 2); */
     border-radius: 5px;
     text-align: center;
 }
@@ -176,10 +176,11 @@ ul .ul_items {
 
 /* ......../ media query /.......... */
 
-@media (min-width: 1879px) { 
+@media (min-width: 1379px) { 
 
     ul .ul_items {
         height: 27vh;
+        top: 6vh;
     }
 
     .nav_items_opcions {
@@ -193,6 +194,8 @@ ul .ul_items {
     .logo {
         width: 22vh;
     }
+
+    
 }
 
 @media (max-width: 768px) {
