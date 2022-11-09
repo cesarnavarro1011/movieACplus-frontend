@@ -1,6 +1,39 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,200px);
-  margin: 0;
+  margin: 0rem 0rem;
   padding: 0;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill,180px);
 }
+
+@media (min-width: 768px) { 
+
+  .grid {
+    grid-template-columns: repeat(auto-fill,220px);
+  }
+}
+
+@media (min-width: 1024px) { 
+
+  .grid {
+    grid-template-columns: repeat(auto-fill,200px);
+  }
+}
+
+@media (min-width: 1239px) { 
+
+  .grid {
+    grid-template-columns: repeat(auto-fill,200px);
+  }
+}
+
+@media (min-width: 1280px) { 
+
+  .grid {
+    grid-template-columns: repeat(auto-fill,260px);
+  }
+}
+
+
+
+

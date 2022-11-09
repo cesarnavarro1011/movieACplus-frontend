@@ -1,7 +1,8 @@
+import styles from "./module-css/front.module.css"
+
 export default function Front() {
   return (
-    <div className="container-portada__zm">
-      {/* <img src ="" className ="portada-1_1__zm" > */}
+    <div className={styles.container_product_1}>
     </div>
   );
 }
