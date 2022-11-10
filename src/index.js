@@ -1,16 +1,14 @@
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Head from './component/head';
-import Front from './component/front';
-import ListMovies from './component/listMovies';
+// import MovieAC from './movieAC+';
+import Session from './component/Session.jsx';
 
 const Root = ReactDOM.createRoot(document.getElementById('root'));
 
 Root.render(
   <React.StrictMode>
-    <Head/>
-    <Front/>
-    <ListMovies/>
+  {/* <MovieAC/> */}
+  <Session/>
   </React.StrictMode>
 );
