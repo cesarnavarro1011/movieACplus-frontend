@@ -141,6 +141,9 @@
 .input_login::placeholder { color: #ffffff; }
 .input_login::placeholder:focus { color: #b08d02; }
 
+.form_button {
+  display: flex;
+}
 
 .button_login,
 .button_login::after {
@@ -257,6 +260,7 @@ button:hover::after {
 .a_recuperar:hover {
   color: #E3B505; 
 }
+
 @media screen and (max-width: 1300px ) {
 
   .responsive {
@@ -265,25 +269,7 @@ button:hover::after {
     background-size: 100% 100%;
     overflow: hidden;
   }
-  
-  .nav {
-    /* background: rgba(0, 0, 0, 0.247); */
-    height: 10vh;
-    display: flex;
-  }
-  
-  .logo {
-    color: #E3B505;
-    /* background-color: aqua; */
-    font-weight: 500;
-    list-style: none;
-    font-size: 6vh;
-    width: 30vh;
-    height: 10vh;
-    line-height: 10vh;
-    text-align: center;
-    margin-left: 1rem;
-  }
+
   .container {
     /* background-color:rgb(12, 1, 104); */
     width: 100%;
@@ -296,7 +282,7 @@ button:hover::after {
   
   .container_session {
     background-color: rgba(0, 0, 0, 0.543);
-    width: 55.6vh;
+    width: 60vh;
     height: 130vh;
     display: flex;
     justify-content: center;
@@ -306,8 +292,8 @@ button:hover::after {
   
   .content_session {
     background-color:rgba(255, 255, 255, 0.073);
-    width: 40vh;
-    height: 55vh;
+    width: 45vh;
+    height: 59vh;
     margin-right: 0vh;
     border-radius: 10px;
     border: 1px solid #e3b7051d;;
@@ -321,7 +307,7 @@ button:hover::after {
   
   .title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   
   .content_api {
@@ -332,6 +318,7 @@ button:hover::after {
     width: 100%;
     height: 12vh;
     gap: 2vh;
+    font-size: 14px;
   
   }
   
@@ -340,7 +327,7 @@ button:hover::after {
     align-items: center;
     display: flex;
     width: 15vh;
-    height: 5vh;
+    height: 6vh;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -352,7 +339,7 @@ button:hover::after {
   }
   
   .google {
-    background: #ffffff;
+    background: #d5d5d5;
     color:rgb(0, 0, 0);
   }
   
@@ -361,21 +348,24 @@ button:hover::after {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
-    width: 30vh;
+    width: 33vh;
     height: 35.5vh;
     border-top: 2px solid #ffffff2c;
   }
   
+  .inputs {
+    margin-top: .5rem;
+  }
+
   .input_login {
-    width: 23.5vh;
-    height: 1vh;
-    margin: 1.5rem 0;
+    width: 25vh;
+    height: 0vh;
+    margin: .4rem .2rem;
     border-radius: 5px;
     background: #00000073;
     border-style: none;
     color: rgb(255, 255, 255);
     padding: 1rem;
-    margin: 1rem;
     border: 1px solid #e3b70572;
   }
   
@@ -392,7 +382,7 @@ button:hover::after {
   }
   
   .input_login_down {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   
   .input_login:focus {
@@ -402,11 +392,11 @@ button:hover::after {
   .input_login::placeholder { color: #ffffff; }
   .input_login::placeholder:focus { color: #b08d02; }
   
-  
+
   .button_login,
   .button_login::after {
-  padding: 16px 20px;
-  font-size: 18px;
+  padding: 12px 9px;
+  font-size: 12px;
   background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
   border: 0;
   color: rgb(0, 0, 0);
@@ -415,7 +405,7 @@ button:hover::after {
   box-shadow: 6px 0px 0px #b08d02;
   outline: transparent;
   position: relative;
-  margin: 0 .9rem;
+  margin: 0 .7rem;
   }
   
   .button_login::after {
@@ -509,11 +499,4 @@ button:hover::after {
     align-items: center;
     margin-top: .5rem;
   }
-  
-  .a_recuperar {
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    margin-top: .5rem;
-  }
-  
 }

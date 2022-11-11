@@ -18,15 +18,16 @@ export default function Session() {
                 <a className={styles.api+" "+styles.google} href="g" >Google</a>
             </div>
             <form className={styles.form_session}>
-                <input className={styles.input_login} type="text" placeholder="User"></input>
-                <input className={styles.input_login+" "+styles.input_login_down} type="text" placeholder="Password"></input>
+                <div className={styles.inputs}>
+                    <input className={styles.input_login} type="text" placeholder="User"></input>
+                    <input className={styles.input_login+" "+styles.input_login_down} type="text" placeholder="Password"></input>
+                </div>
                 <div className={styles.form_button}>
                   <button className={styles.button_login}>Login</button>
-                  <button className={styles.button_login}>in-login</button>
+                  <button className={styles.button_login}>login in</button>
                 </div>
                 <div className={styles.ul_opcions_recuperacion}>
-                  <a className={styles.a_recuperar} href="3">Olvidaste Contraseña</a>
-                  <a className={styles.a_recuperar} href="3">Recuperar Correo</a>
+                  <a className={styles.a_recuperar} href="3">¿Olvidaste Contraseña?</a>
                 </div>
             </form>
         </div>
