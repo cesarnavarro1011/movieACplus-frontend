@@ -318,3 +318,64 @@
     font-size: large;
   }
 }
+
+/*FALTA POR RESOLVER*/
+@media screen and (min-width: 1633px) {
+  
+  .card {
+    width: 40vh;
+    height: 45vh;
+  }
+
+  .card_info {
+    height: 28vh;
+  }
+  
+  .text_title {
+    height: 4rem;
+    font-size: x-large;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 54%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  
+  .card {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .card_info {
+    height: 28vh;
+  }
+  
+  .text_title {
+    height: 4rem;
+    font-size: x-large;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 54%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+
