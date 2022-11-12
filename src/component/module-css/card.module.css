@@ -143,184 +143,279 @@
   color: #f5f5f5;
 }
 
-@media screen and (min-width: 280px) {
+/*LAPTOP, PC, TV */
+@media screen and (max-width: 3840px) {
+  
+  .card {
+    width: 40rem;
+    height: 50rem;
+  }
   
   .card_info {
-    height: 25vh;
-    padding: .8rem ;
+    height: 30vh;
+    padding: 1.5rem;
   }
   
   .text_title {
-    font-size: auto ;
-    height: 4rem;
+    height: 8rem;
+    font-size: 3.5rem;
+  }
+
+  .gender {
+    height: 1rem;
+    font-size: 2.7rem;
+  }
+
+  .score {
+    width: 60%;
   }
   
-  .gender {
-    font-size: 0.9rem;
+  .release_date {
+    font-size: 2.4rem;
   }
-    
+}
+
+@media screen and (max-width: 2561px) {
+  
+  .card {
+    width: 30rem;
+    height: 35rem;
+  }
+  
+  .card_info {
+    height: 30vh;
+    padding: 1.3rem;
+  }
+  
+  .text_title {
+    height: 5.9rem;
+    font-size: 2.3rem;
+  }
+
+  .gender {
+    height: 1rem;
+    font-size: 1.9rem;
+  }
+
   .score {
     width: 50%;
   }
-}
 
-@media screen and (min-width: 320px) {
-  
-  .card_info {
-    height: 30vh;
-    padding: .8rem ;
-  }
-  
-  .text_title {
-    font-size: 1.5rem;
-    height: 6rem;
-  }
-  
-  .gender {
-    font-size: 1rem;
-  }
-    
-}
-
-@media screen and (min-width: 360px) {
-  
-  .card_info {
-    height: 30vh;
-    padding: .8rem ;
-  }
-  
-  .text_title {
-    font-size: 1.5rem;
-    height: 2.2rem;
-  }
-  
-  .gender {
-    font-size: 1.2rem;
-  }
-    
-}
-
-@media screen and (min-width: 375px) {
-  
-  .card_info {
-    height: 30vh;
-    padding: .8rem ;
-  }
-  
-  .text_title {
-    font-size: 1.5rem;
-    height: 1rem;
-  }
-  
-  .gender {
-    font-size: 1rem;
-  }
-    
-}
-
-@media screen and (min-width: 412px) {
-
-  .card_info {
-    height: 25vh;
-    padding: .8rem ;
-  }
-  
-  .text_title {
-    height: 2rem;
-  }
-  
-  .gender {
-    font-size: 0.8rem;
-    margin-top: 7vh;
-  }
-    
-  .score {
-    width: 45%;
-  }
-
-}
-/*TABLE */
-@media screen and (min-width: 540px) {
-  
-  .text_title {
-    height: 1.4rem;
+  .release_date {
+    font-size: 1.9rem;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 1922px) {
   
   .card {
-    padding: 2rem 0;
+    width: 20rem;
+    height: 25rem;
   }
-
+  
   .card_info {
-    height: 25vh;
-    padding: .8rem ;
+    height: 30vh;
   }
   
   .text_title {
-    height: .5rem;
-    font-size: .9rem;
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 60%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1682px) {
+  
+  .card {
+    width: 20rem;
+    height: 25rem;
+  }
+  
+  .card_info {
+    height: 30vh;
+  }
+  
+  .text_title {
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 60%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1442px) {
+  
+  .card {
+    width: 20rem;
+    height: 25rem;
+  }
+  
+  .card_info {
+    height: 30vh;
+  }
+  
+  .text_title {
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 54%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  
+  .card {
+    width: 20rem;
+    height: 25rem;
+  }
+  
+  .card_info {
+    height: 30vh;
+  }
+  
+  .text_title {
+    height: 6.7rem;
+    font-size: 1.4rem;
+  }
+
+  .gender {
+    font-size: large;
+  }
+
+  .score {
+    width: 54%;
+  }
+
+  .release_date {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  
+  .card {
+    width: 20rem;
+    height: 21rem;
+  }
+  
+  .card_info {
+    height: 28vh;
+  }
+  
+  .text_title {
+    height: 3.6rem;
+    font-size: 1.3rem;
   }
 
   .gender {
     height: 1vh;
   }
+
+  .score {
+    width: 59%;
+  }
+
+  .release_date {
+    font-size: .9rem;
+  }
+
 }
 
-@media screen and (min-width: 712px) {
-
+@media screen and (max-width: 1240px) {
+  
   .card {
-    padding: 2rem 0;
+    width: 20rem;
+    height: 20rem;
   }
 
   .card_info {
-    height: 25vh;
-    padding: .8rem ;
+    height: 28.7vh;
   }
   
   .text_title {
+    height: 4.5rem;
     font-size: 1.2rem;
-    height: 0rem;
   }
 
   .gender {
-    height: .5vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-  .card {
-    width: 30vh;
-    height: 30vh;
-    padding: 2rem 0;
-  }
-
-  .card_info {
-    height: 25vh;
-    padding: .8rem ;
-  }
-  
-  .text_title {
-    font-size: 1.2rem;
-    height: 1.8rem;
-  }
-
-  .gender {
-    height: .5vh;
+    height: 1.6vh;
+    font-size: .9rem;
   }
 
   .score {
-    width: 55%;
+    width: 59%;
+  }
+
+  .release_date {
+    font-size: .9rem;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1025px) {
   
   .card {
-    width: 20vh;
-    height: 25vh;
+    width: 20rem;
+    height: 21rem;
+    padding: 2rem 0;
+  }
+
+  .card_info {
+    height: 32.5vh;
+  }
+  
+  .text_title {
+    font-size: 1.5rem;
+    height: 5.6rem;
+  }
+
+  .gender {
+    height: 2vh;
+  }
+
+  .score {
+    width: 59%;
+  }
+
+}
+
+/*TABLE*/
+
+@media screen and (max-width: 991px) {
+  
+  .card {
+    width: 20rem;
+    height: 20rem;
     padding: 2rem 0;
   }
 
@@ -330,7 +425,7 @@
   }
   
   .text_title {
-    font-size: x-large;
+    font-size: 1.2rem;
     height: 1rem;
   }
 
@@ -346,57 +441,87 @@
 
 }
 
-/*PORTATIL,PC*/
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 801px) {
   
   .card {
-    width: 40vh;
-    height: 55vh;
+    width: 20rem;
+    height: 20rem;
     padding: 2rem 0;
   }
-  
-  .card_info {
-    height: 32vh;
-    padding: .9rem ;
-  }
 
+  .card_info {
+    height: 15vh;
+    padding: .8rem ;
+  }
+  
   .text_title {
-    height: 5rem;
+    font-size: 1.3rem;
+    height: 2rem;
   }
 
   .gender {
-    font-size: .9rem;
+    height: 1vh;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-top: 7vh;
   }
-
   .score {
-    width: 60%;
+    width: 55%;
   }
 
-  .release_date {
-    font-size: .9rem;
-  }
 }
 
-
-@media screen and (min-width: 1239px) {
+@media screen and (max-width: 768px) {
   
   .card {
-    width: 40vh;
-    height: 55vh;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem 0;
   }
 
   .card_info {
-    height: 34vh;
+    height: 25vh;
+    padding: .8rem ;
   }
   
   .text_title {
-    height: 4.5rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    height: 2rem;
   }
 
   .gender {
+    height: 1vh;
+    letter-spacing: 1px;
     font-size: 1rem;
+    margin-top: 7vh;
+  }
+  .score {
+    width: 55%;
+  }
+
+}
+
+/*IPHONE*/
+
+@media screen and (max-width: 414px) {
+
+  .card {
+    width: 25vh;
+    height: 35vh;
+    padding: 2rem 0;
+  }
+
+  .card_info {
+    height: 25vh;
+  }
+  
+  .text_title {
+    font-size: 1.6rem;
+    height: 4.3rem;
+  }
+
+  .gender {
+    font-size: 1.3rem;
   }
 
   .score {
@@ -404,40 +529,100 @@
   }
 
   .release_date {
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 375px) {
   
   .card {
-    width: 40vh;
-    height: 54vh;
-    padding: 3rem 0;
+    width: 20rem;
+    height: 22rem;
   }
 
   .card_info {
-    height: 28vh;
+    height: 25vh;
+    padding: .8rem ;
   }
   
   .text_title {
-    height: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem ;
+    height: 1.6rem;
   }
-
+  
   .gender {
-    font-size: large;
-    height: 1rem;
+    font-size: 1rem;
   }
-
+    
   .score {
-    width: 45%;
+    width: 55%;
   }
 
-  .release_date {
-    font-size: medium;
+  .release_date{
+    font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 361px) {
+  
+  .card {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .card_info {
+    height: 25vh;
+    padding: .8rem ;
+  }
+  
+  .text_title {
+    font-size: 1.3rem ;
+    height: 1.6rem;
+  }
+  
+  .gender {
+    font-size: 1rem;
+  }
+    
+  .score {
+    width: 55%;
+  }
+
+  .release_date{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  
+  .card {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .card_info {
+    height: 25vh;
+    padding: .8rem ;
+  }
+  
+  .text_title {
+    font-size: 1.2rem;
+    height: 3.5rem;
+  }
+  
+  .gender {
+    font-size: 0.9rem;
+  }
+    
+  .score {
+    width: 50%;
+  }
+
+  .release_date{
+    font-size: 1rem;
+  }
+}
+
 
 
 

@@ -174,9 +174,8 @@ ul .ul_items {
     display: block;
 }
 
-/* ......../ media query /.......... */
 
-@media (min-width: 1379px) { 
+@media (max-width: 1379px) { 
 
     ul .ul_items {
         height: 27vh;
@@ -196,6 +195,17 @@ ul .ul_items {
     }
 
     
+}
+
+@media(max-width: 1200px) {
+
+.img_container h3 {
+    font-size: 1.5rem;
+}
+
+.img_container .btn {
+    font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -442,15 +452,6 @@ ul .ul_items {
 }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
-  .img_container h3 {
-    font-size: 1.5rem;
-}
-
-.img_container .btn {
-    font-size: 0.7rem;
-  }
-}
 
 @media (orientation: landscape) and (max-height: 500px) {
 .showcase_area {
