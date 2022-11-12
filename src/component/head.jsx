@@ -41,6 +41,8 @@ export default function Head() {
                 
                 <input className={styles.search} type="search" placeholder="search"/>
             </div> 
+            <input className={styles.search_iphone} type="search" placeholder="search"/>
+
         </nav>
     </header>
     );
