@@ -44,7 +44,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.909);
     color: rgb(255, 255, 255);
-    opacity: 0.85;
+    opacity: 0.90;
     height: 70px;
     z-index: 12;
     margin-top: -4.5rem;
@@ -100,6 +100,11 @@
 .search_iphone {
     display:none;
 }
+
+.search_iphone_menu {
+    display: none
+}
+
 .menu_items {
     order: 2;
     display: flex;
@@ -289,7 +294,7 @@ ul .ul_items {
 
     .search {
         width: 30vh;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav_items_opcions {
@@ -480,19 +485,26 @@ ul .ul_items {
     .item_account {
         font-size: 1rem;
     }
+
+    ul .ul_items {
+    width: 24vh;
+    height: 30vh;
+    top: 8vh;
+    padding: 1rem 0;
+    }
 }
 
 @media (max-width: 1025px) { 
 
     .logo {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         width: 0rem;
         height: 2rem;
         line-height: 2rem;
     }
 
     .search {
-        width: 18vh;
+        width: 20vh;
         height: 2rem;
         font-size: 1rem;
     }
@@ -534,7 +546,7 @@ ul .ul_items {
 
     .navbar_container .hamburger_lines {
     display: block;
-    height: 25px;
+    height: 23px;
     width: 35px;
     position: absolute;
     top: 20px;
@@ -584,6 +596,10 @@ ul .ul_items {
     margin-top: 4.5rem;
     }
 
+    .search_iphone_menu {
+        display: none
+    }
+
     .nav_items_opcions {
         display: none;
     }
@@ -593,9 +609,10 @@ ul .ul_items {
     }
 
     .nav_items_options_iphone {
+        background-color: rgb(255, 183, 0);
         width: 100%;
-        background-color: rgb(5, 5, 5);
-        height: 8vh;
+        height: 9vh;
+        line-height: 9vh;
         font-size: 2.2rem;
         text-align: center;
     }
@@ -607,7 +624,7 @@ ul .ul_items {
         text-align: center;
         width: 100%;
         margin: 0 0 0 1rem;
-        padding: 0rem 0;
+        padding: 1rem 0;
     }
     
     ul .item_iphone {
@@ -634,12 +651,12 @@ ul .ul_items {
     summary::before {
         content: "+";
         padding-right: 1rem;
-        color: #00ff3c;
+        color: #ffffff;
     }
 
     details[open] summary::before {
         content: "-";
-        color:#00d0b1;
+        color:#ffffff;
     }
 
     .logo {
@@ -734,21 +751,45 @@ ul .ul_items {
         display: none;
     }
 
+    .search_iphone_menu {
+        background-color: rgb(0, 0, 0);
+        height: 4vh;
+        width: 14rem;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        border-style: none;
+        padding: 1rem 1rem;
+        border:#4e4521;
+        border-style: solid;
+        border-width: 1px;
+        position: absolute;
+        left: 8rem;
+        top: .9rem;
+        display: block;
+    }  
+
+    .container_menu_iphone {
+        margin-top: 0rem;
+        position: relative;
+        top: 5rem;
+        left: 0rem;
+    }
+
     .nav_items_options_iphone {
-        background-color: rgb(5, 5, 5);
-        height: 10vh;
-        line-height: 10vh;
+        background-color: rgb(255, 183, 0);
+        height: 8vh;
+        line-height: 8vh;
         font-size: 2.2rem;
     }
     
     .ul_items_iphone {
         /* background-color: rgb(4, 252, 235); */
         text-align: center;
-        height: 45vh;
+        height: 40vh;
         text-align: center;
         width: 100%;
         margin: 0 0 0 1rem;
-        padding: 0rem 0;
+        padding: 1rem 0;
     }
     
     ul .item_iphone {

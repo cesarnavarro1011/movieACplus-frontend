@@ -25,12 +25,8 @@ export default function Head() {
                         <NavDesktop title="series"/>
                     </a>
 
-                    <a className={styles.a_Movie} href="t">
                         <NavIphone title="Movie"/>
-                    </a>
-                    <a className={styles.a_series} href="f">
                         <NavIphone title="series"/>
-                    </a>
                     
                     <li className={styles.nav_items_opcions +" "+styles.item_account}>Account</li>
                 </ul>
