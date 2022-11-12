@@ -82,7 +82,7 @@
     color: rgb(255, 255, 255);
     border-style: none;
     padding: 1rem;
-    border: rgb(89, 85, 85);
+    border:#4e4521;
     border-style: solid;
     border-width: 1px;
     
@@ -174,39 +174,356 @@ ul .ul_items {
     display: block;
 }
 
+@media (max-width: 3841px) { 
 
-@media (max-width: 1379px) { 
-
-    ul .ul_items {
-        height: 27vh;
-        top: 6vh;
+    .container {
+        font-family: "Poppins", sans-serif;
+        max-width: 3840px;
     }
 
-    .nav_items_opcions {
-        height: 6.4vh;
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 9rem;
     }
 
-    .search {
-        width: 35vh;
+    .navbar_container {
+        height: 9rem;
     }
 
     .logo {
-        width: 22vh;
+        font-size: 4.5rem;
     }
 
-    
-}
+    .search {
+        width: 30vh;
+        font-size: 2rem;
+    }
 
-@media(max-width: 1200px) {
+    .nav_items_opcions {
+        height: 9rem;
+    }
 
-.img_container h3 {
-    font-size: 1.5rem;
-}
+    .a_Movie, .a_series {
+        font-size: 3rem;
+    }
 
-.img_container .btn {
-    font-size: 0.7rem;
+    ul .ul_items {
+        width: 24vh;
+        height: 22vh;
+        top: 6.9vh;
+        padding: 3rem 0;
+    }
+
+    .item a {
+        font-size: 2.5rem;
+    }
+
+    .item_account {
+        font-size: 2.5rem;
     }
 }
+
+@media (max-width: 2561px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 7rem;
+    }
+
+    .navbar_container {
+        height: 7rem;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+        width: 23rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1.7rem;
+    }
+
+    .nav_items_opcions {
+        height: 7rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 2rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 25vh;
+        top: 8vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: 2rem;
+    }
+
+    .item_account {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1920px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 5rem;
+    }
+
+    .navbar_container {
+        height: 5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        width: 18rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1.5rem;
+    }
+
+    .nav_items_opcions {
+        height: 5rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1.4rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 25vh;
+        top: 8.2vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: 1.1rem;
+    }
+
+    .item_account {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1680px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 5rem;
+    }
+
+    .navbar_container {
+        height: 5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        width: 14rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1.5rem;
+    }
+
+    ul .ul_items {
+        width: 20vh;
+        height: 23vh;
+        top: 8vh;
+    }
+
+}
+
+@media (max-width: 1440px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 4rem;
+    }
+
+    .navbar_container {
+        height: 4rem;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+        width: 12rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1.2rem;
+    }
+
+    .nav_items_opcions {
+        height: 4rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1.2rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 27vh;
+        top: 7vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: 1.1rem;
+    }
+
+    .item_account {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1367px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 4rem;
+    }
+
+    .navbar_container {
+        height: 4rem;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+        width: 12rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1.2rem;
+    }
+
+    .nav_items_opcions {
+        height: 4rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1.2rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 40vh;
+        top: 8vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: 1.1rem;
+    }
+
+    .item_account {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1280px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 4rem;
+    }
+
+    .navbar_container {
+        height: 4rem;
+    }
+
+    .logo {
+        font-size: 2.1rem;
+        width: 12rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1rem;
+    }
+
+    .nav_items_opcions {
+        height: 4rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 30vh;
+        top: 8vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: 1.1rem;
+    }
+
+    .item_account {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1280px) { 
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.909);
+        height: 4rem;
+    }
+
+    .navbar_container {
+        height: 4rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        width: 0rem;
+        height: 2rem;
+    }
+
+    .search {
+        width: 30vh;
+        font-size: 1rem;
+    }
+
+    .nav_items_opcions {
+        height: 4rem;
+        width: 6.5rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1rem;
+    }
+
+    ul .ul_items {
+        width: 24vh;
+        height: 32vh;
+        top: 8vh;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: .9rem;
+    }
+
+    .item_account {
+        font-size: 1rem;
+    }
+}
+/*FALTA*/
 
 @media (max-width: 768px) {
     .navbar {
@@ -399,7 +716,6 @@ ul .ul_items {
     }
     
 }
-
 @media (max-width: 500px) {
     html {
     font-size: 65%;
@@ -451,7 +767,6 @@ ul .ul_items {
     font-weight: 500;
 }
 }
-
 
 @media (orientation: landscape) and (max-height: 500px) {
 .showcase_area {
