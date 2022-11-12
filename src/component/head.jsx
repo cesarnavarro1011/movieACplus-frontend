@@ -1,5 +1,6 @@
 import { NavDesktop } from "./navDesktop";
 import { NavIphone } from "./NavIphone";
+import CardPerfil from "./menuPerfil";
 
 import styles from "./module-css/head.module.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,7 +29,9 @@ export default function Head() {
                         <NavIphone title="Movie"/>
                         <NavIphone title="series"/>
                     
-                    <li className={styles.nav_items_opcions +" "+styles.item_account}>Account</li>
+                    <li className={styles.nav_items_opcions+" "+styles.item_account}>Account
+                        <CardPerfil/>
+                    </li>
                 </ul>
 
                 <a href="g" className={styles.linklogo}>
