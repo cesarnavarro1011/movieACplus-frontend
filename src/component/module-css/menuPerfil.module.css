@@ -27,15 +27,16 @@
   align-items: center;
   right: 0rem;
   top: 9.5rem;
-  width: 40rem;
-  height: 30rem; 
+  width: 45rem;
+  height: 35rem; 
   border-radius: 0 0 10px 12px; 
+  overflow: hidden;
 }
 
 .container_menu_perfil_list {
-  /* background-color:rgb(9, 159, 24); */
-  width: 40rem;
-  height: 17rem;
+  /* background-color:rgb(159, 249, 2); */
+  width: 45rem;
+  height: 21rem;
   font-size: 10px;
   position:relative;
   right: 1.1rem;
@@ -45,12 +46,12 @@
 }
 
 .container_menu_container_perfil {
-  background-color:rgb(15, 15, 15);
+  /* background-color:rgb(0, 65, 228); */
   border-bottom: 2px solid rgb(255, 255, 255);
   display: flex;
   flex-direction:row;
   width: 100%;
-  height: 17rem;
+  height: 22rem;
 }
 
 .container_menu_perfil_circle { 
@@ -61,10 +62,11 @@
   /* background-image: url(/pagina/assets/img/icons-nav/mas+.png); */
   border-radius: 50%;
   position: relative;
-  width: 16rem;
-  height: 15rem;
+  width: 19rem;
+  height: 18rem;
   border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
+  top: 1rem;
 }
 
 .container_menu_perfil_circle_img {
@@ -77,12 +79,12 @@
 
 .container_menu_perfil_Name1 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-  background-color:rgb(0, 0, 0);
+  background-color:rgb(31, 31, 31);
   display: inline-block;
   text-transform:lowercase;
   font-family: roboto;
   color: #f0f8ff;
-  width: 22rem;
+  width: 23rem;
   height: 5.5rem;
   font-size: 2.9rem;
   display: flex;
@@ -97,9 +99,9 @@
   /* background-color:rgba(165, 100, 100, 0.81); */
   color:rgb(240, 255, 255);
   display: inline;
-  margin: 0px 5rem 0px 17px;
+  margin: 0px 5rem 0px 40px;
   position: relative;
-  top: 4rem;
+  top: 8rem;
   text-decoration: none;
   font-size: 1.9rem;
 }
@@ -109,35 +111,35 @@
   color:rgb(227, 170, 15);
   display: inline;
   position: relative;
-  top: 4rem;
+  top: 8rem;
   text-decoration: none;
   font-size: 1.9rem;
 }
 
 .container_menu_perfil_list_option {
   /* background-color:rgb(120, 2, 114); */
-  width: 37rem;
+  width: 49rem;
   height: 6rem;
   font-size: 2.3rem;
   position:relative;
-  padding: 0px 20px 10px 15px;
+  padding: 0px 0px 10px 5px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  right: inherit;
 }
 
 .container_menu_perfil_a {
   /* background-color:rgb(83, 90, 9); */
-  width: 37rem;
-  height: 6rem;
+  width: 40rem;
+  height: 5rem;
   text-decoration: none;
   color: aliceblue;
   text-transform:uppercase;
   letter-spacing:1px;
   display:flex;
-  line-height: 7rem;
-  padding: 0px 0 10px 15px;
+  line-height: 6rem;
+  padding: 10px 0 10px 15px;
+  margin-left: 2rem;
 }
 
 .container_menu_perfil_a:hover {
@@ -157,68 +159,69 @@
 @media screen and (max-width: 2560px) {
   
   .container_menu_perfil {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     right: 0rem;
-    top: 7.3rem;
-    width: 35rem;
-    height: 27rem; 
+    top: 7rem;
+    width: 32rem;
+    height: 28rem; 
   }
   
   .container_menu_perfil_list {
     /* background-color:rgb(9, 159, 24); */
     width: 35rem;
-    height: 13rem;
+    height: 15rem;
     font-size: 10px;
-    right: 0rem;
-    padding: 23px 10px 20px 10px;
+    right: 1.9rem;
+    padding: 20px 10px 20px 10px;
   }
   
   .container_menu_container_perfil {
-    background-color:rgb(15, 15, 15);
+    /* background-color:rgb(15, 15, 15); */
     width: 100%;
-    height: 14rem;
+    height: 16rem;
   }
   
   .container_menu_perfil_circle { 
-    background:rgb(0, 0, 0);
-    width: 13rem;
-    height: 12rem;
+    /* background:rgb(0, 0, 0); */
+    width: 15rem;
+    height: 13.9rem;
+    top: .5rem;
   }
   
   .container_menu_perfil_Name1 {
-    background-color:rgb(0, 0, 0);
-    width: 20rem;
+    /* background-color:rgb(0, 0, 0); */
+    width: 18rem;
     height: 5.5rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin: 20px 0px 0px 15px;
     padding: 0 0 0 15px;
   }
   
   .container_menu_perfil_editar_perfil {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    margin: 0px 3rem 0px 17px;
-    top: 2rem;
+    margin: 0px 2rem 0px 10px;
+    top: 4rem;
     font-size: 1.7rem;
   }
   
   .container_menu_perfil_type {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    top: 2rem;
+    top: 4rem;
     font-size: 1.7rem;
   }
   
   .container_menu_perfil_list_option {
     /* background-color:rgb(120, 2, 114); */
-    width: 30rem;
+    width: 36rem;
     height: 6rem;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     padding: 0px 20px 0px 15px;
     margin-top: 2rem;
   }
   
   .container_menu_perfil_a {
     /* background-color:rgb(83, 90, 9); */
-    width: 30rem;
+    width: 27rem;
     height: 5rem;
     line-height: 6rem;
     padding: 0px 0 0px 15px;
@@ -229,59 +232,133 @@
 @media screen and (max-width: 1920px) {
   
   .container_menu_perfil {
-    /* background-color: rgb(255, 0, 0); */
+    background-color: rgb(0, 0, 0);
     /* display:none; */
     right: 0rem;
     top: 5.2rem;
-    width: 20rem;
-    height: 15rem; 
+    width: 19rem;
+    height: 17rem;
   }
   
   .container_menu_perfil_list {
     /* background-color:rgb(9, 159, 24); */
-    width: 20rem;
-    height: 8rem;
+    width: 21rem;
+    height: 11rem;
     font-size: 10px;
-    right: 1rem;
-    padding: 10px;
+    right: 2rem;
+    padding: 6px;
   }
   
   .container_menu_container_perfil {
     background-color:rgb(15, 15, 15);
-    height: 8rem;
+    height: 10rem;
   }
   
   .container_menu_perfil_circle { 
     background:rgb(0, 0, 0);
-    width: 10rem;
-    height: 7.2rem;
+    width: 9rem;
+    height: 7.8rem;
+    top: .8rem;
   }
   
   .container_menu_perfil_Name1 {
     background-color:rgb(0, 0, 0);
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.3rem;
-    margin: 10px 0px 0px 15px;
+    width: 11rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    margin: 10px 0px 0px 9px;
     padding: 0 0 0 15px;
   }
   
   .container_menu_perfil_editar_perfil {
     /* background-color:rgba(165, 100, 100, 0.81); */
     margin: 0px 1.5rem 0px 17px;
-    top: 1.3rem;
+    top: 2.9rem;
     font-size: 1rem;
   }
   
   .container_menu_perfil_type {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    top: 1.3rem;
+    top: 2.9rem;
     font-size: 1rem;
   }
   
   .container_menu_perfil_list_option {
     /* background-color:rgb(120, 2, 114); */
-    width: 21rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0px 0px 0px 10px;
+    margin-top: .5rem;
+    margin-left: -1.5rem;
+  }
+  
+  .container_menu_perfil_a {
+    /* background-color:rgb(83, 90, 9); */
+    width: 17rem;
+    height: 3rem;
+    line-height: 3.5rem;
+    padding: 0px 0px 0px 10px;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  
+  .container_menu_perfil {
+    /* background-color: rgb(255, 0, 0); */
+    /* display:none; */
+    right: 0rem;
+    top: 5.2rem;
+    width: 20rem;
+    height: 17rem; 
+  }
+  
+  .container_menu_perfil_list {
+    /* background-color:rgb(9, 159, 24); */
+    width: 21.9rem;
+    height: 11rem;
+    right: 2rem;
+    padding: 7px;
+  }
+  
+  .container_menu_container_perfil {
+    background-color:rgb(15, 15, 15);
+    height: 10.7rem;
+  }
+  
+  .container_menu_perfil_circle { 
+    background:rgb(0, 0, 0);
+    width: 9rem;
+    height: 8.3rem;
+    top: .6rem ;
+  }
+  
+  .container_menu_perfil_Name1 {
+    background-color:rgb(0, 0, 0);
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    margin: 10px 0px 0px 9px;
+    padding: 0 0 0 15px;
+  }
+  
+  .container_menu_perfil_editar_perfil {
+    /* background-color:rgba(165, 100, 100, 0.81); */
+    margin: 0px 1.5rem 0px 17px;
+    top: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .container_menu_perfil_type {
+    /* background-color:rgba(165, 100, 100, 0.81); */
+    top: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .container_menu_perfil_list_option {
+    /* background-color:rgb(120, 2, 114); */
+    width: 24rem;
     height: 3rem;
     font-size: 1rem;
     padding: 0px 10px 0px 10px;
@@ -290,10 +367,85 @@
   
   .container_menu_perfil_a {
     /* background-color:rgb(83, 90, 9); */
-    width: 17rem;
+    width: 18rem;
     height: 3rem;
     line-height: 3.5rem;
     padding: 0px 0 0px 15px;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  
+  .container_menu_perfil {
+    /* background-color: rgb(255, 0, 0); */
+    /* display:none; */
+    right: 0rem;
+    top: 4rem;
+    width: 17rem;
+    height: 16rem; 
+  }
+  
+  .container_menu_perfil_list {
+    /* background-color:rgb(9, 159, 24); */
+    width: 19rem;
+    height: 10rem;
+    right: 2rem;
+    padding: 7px;
+  }
+  
+  .container_menu_container_perfil {
+    background-color:rgb(15, 15, 15);
+    height: 10rem;
+  }
+  
+  .container_menu_perfil_circle { 
+    background:rgb(0, 0, 0);
+    width: 9rem;
+    height: 7.8rem;
+    top: .6rem ;
+  }
+  
+  .container_menu_perfil_Name1 {
+    background-color:rgb(0, 0, 0);
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    margin: 10px 0px 0px 9px;
+    padding: 0 0 0 15px;
+  }
+  
+  .container_menu_perfil_editar_perfil {
+    /* background-color:rgba(165, 100, 100, 0.81); */
+    margin: 0px 1.5rem 0px 10px;
+    top: 2.5rem;
+    font-size: .9rem;
+  }
+  
+  .container_menu_perfil_type {
+    /* background-color:rgba(165, 100, 100, 0.81); */
+    top: 2.5rem;
+    font-size: .9rem;
+  }
+  
+  .container_menu_perfil_list_option {
+    /* background-color:rgb(120, 2, 114); */
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0px 10px 0px 10px;
+    margin-top: .6rem;
+    right: 1.9rem;
+    margin-left: 0rem;
+  }
+  
+  .container_menu_perfil_a {
+    /* background-color:rgb(83, 90, 9); */
+    width: 14rem;
+    height: 3rem;
+    line-height: 3.5rem;
+    padding: 0px 0 0px 15px;
+    margin-left: .9rem;
   }
 }
 
@@ -302,66 +454,67 @@
   .container_menu_perfil {
     /* background-color: rgb(255, 0, 0); */
     right: 0rem;
-    top: 4.1rem;
-    width: 15rem;
-    height: 13rem; 
+    top: 4rem;
+    width: 11rem;
+    height: 11.5rem; 
+    overflow: hidden;
   }
   
   .container_menu_perfil_list {
     /* background-color:rgb(9, 159, 24); */
     width: 15.5rem;
-    height: 7rem;
-    right: 1rem;
-    padding: 9px;
+    height: 6.7rem;
+    right: 2.5rem;
+    padding: 6px;
   }
   
   .container_menu_container_perfil {
     background-color:rgb(15, 15, 15);
+    width: 13rem;
     height: 6.7rem;
-    width: 15.7rem;
   }
   
   .container_menu_perfil_circle { 
     background:rgb(0, 0, 0);
-    width: 10rem;
-    height: 5.5rem;
-    margin-top: .2rem;
+    width: 14rem;
+    height: 4.7rem;
+    top: .7rem;
   }
   
   .container_menu_perfil_Name1 {
     background-color:rgb(0, 0, 0);
-    width: 7.7rem;
+    width: 6.6rem;
     height: 2.5rem;
-    font-size: 1rem;
-    margin: 10px 0px 0px 15px;
+    font-size: .9rem;
+    margin: 10px 0px 0px 5px;
     padding: 0 0 0 15px;
   }
   
   .container_menu_perfil_editar_perfil {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    margin: 0px 1rem 0px 10px;
-    top: 1rem;
-    font-size: .8rem;
+    margin: 0px 1rem 0px 5px;
+    top: 1.3rem;
+    font-size: .7rem;
   }
   
   .container_menu_perfil_type {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    top: 1rem;
-    font-size: .8rem;
+    top: 1.3rem;
+    font-size: .7rem;
   }
   
   .container_menu_perfil_list_option {
-    /* background-color:rgb(120, 2, 114); */
-    width: 17rem;
+    /* background-color:rgb(2, 118, 120); */
+    width: 15rem;
     height: 2.2rem;
-    font-size: .8rem;
-    padding: 0px 20px 0px 10px;
-    margin-top: 1rem;
+    padding: 0px 0px 0px 0px;
+    margin-top: .5rem;
+    font-size: .7rem;
   }
   
   .container_menu_perfil_a {
     /* background-color:rgb(83, 90, 9); */
-    width: 14rem;
+    width: 9.4rem;
     height: 2rem;
     line-height: 2rem;
     padding: 0px 0 0px 9px;
