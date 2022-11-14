@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap');
+
 .responsive {
   background-image: url("/src/assets/img/Fondo\ de\ pantalla\ Rick\ y\ Morty\ en\ Universo\ de\ Dragon\ Ball.jpeg");
   background-repeat: no-repeat;
@@ -12,9 +14,10 @@
 }
 
 .logo {
+  font-family: 'Overpass', sans-serif;
   color: #E3B505;
   /* background-color: aqua; */
-  font-weight: 500;
+  font-weight: 900;
   list-style: none;
   font-size: 6vh;
   width: 30vh;
@@ -44,7 +47,7 @@
 }
 
 .content_session {
-  background-color:rgba(255, 255, 255, 0.073);
+  background-color:rgba(219, 161, 15, 0.073);
   width: 40vh;
   height: 55vh;
   margin-right: 0vh;
@@ -560,7 +563,6 @@ button:hover::after {
   }
   
   .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
     width: 45vh;
     height: 59vh;
     top: 25vh;
@@ -571,41 +573,20 @@ button:hover::after {
   }
   
   .content_api {
-    background-color: yellow;
     gap: 2vh;
     font-size: 14px;
   
   }
   
   .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
     width: 15vh;
     height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
   }
   
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
   
   .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
     width: 33vh;
     height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
   }
   
   .inputs {
@@ -615,87 +596,107 @@ button:hover::after {
   .input_login {
     width: 25vh;
     height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
   }
   
   .input_login_down {
     margin-bottom: 1rem;
   }
   
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-  }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
-
   .button_login,
   .button_login::after {
   padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
   margin: 0 .7rem;
   }
   
-  .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
-  }
-  
-
   .ul_opcions_recuperacion {
-    /* background-color: red; */
     width: 100%;
     height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
   }
 }
 
-@media screen and (max-width: 960px ) {
+/*TABLET*/
+@media screen and (max-width: 991px ) {
+
+  .container {
+    width: 100%;
+    height: 90vh;
+  }
+  
+  .container_session {
+    width: 90vh;
+    height: 130vh;
+  }
+  
+  .content_session {
+    width: 40vh;
+    height: 55vh;
+    top: 25vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .content_api {
+    font-size: 2.5vh;
+    gap: 3.1vh;
+  }
+  
+  .api {
+    width: 14vh;
+    height: 6.5vh;
+    font-size: 2.1vh;
+  }
+  
+  .form_session {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .inputs {
+    margin-top: .4rem;
+  }
+
+  .input_login {
+    width: 25vh;
+    height: .5vh;
+    margin: .7rem .2rem;
+    padding: 1.3rem;
+  }
+  
+  .input_login_down {
+    margin-bottom: 1.9rem;
+  }
+
+  .form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button_login,
+  .button_login::after {
+  padding: 2.1vh 2.5vh;
+  font-size: 1.7vh;
+  margin: 0 1.1rem;
+  }
+  
+  .button_login::after {
+    position: absolute;
+  }
+  
+  .ul_opcions_recuperacion {
+    font-size: 1.8vh;
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+/*IPHONE*/
+@media screen and (max-width: 480px ) {
 
   .container {
     /* background-color:rgb(12, 1, 104); */
@@ -704,148 +705,79 @@ button:hover::after {
   }
   
   .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
     width: 60vh;
     height: 130vh;
   }
   
   .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
+    width: 40vh;
+    height: 65vh;
     top: 25vh;
+
   }
   
   .title {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   
   .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
+    font-size: 2.5vh;
+    gap: 3.1vh;
   }
   
   .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
+    width: 14vh;
+    height: 6.5vh;
+    font-size: 2.1vh;
   }
   
   .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
     display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
   
   .inputs {
-    margin-top: .5rem;
+    margin-top: .4rem;
   }
 
   .input_login {
     width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
+    height: .5vh;
+    margin: .7rem .2rem;
+    padding: 1.3rem;
   }
   
   .input_login_down {
-    margin-bottom: 1rem;
+    margin-bottom: 1.9rem;
   }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
+
+  .form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
 
   .button_login,
   .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
+  padding: 2.1vh 2.5vh;
+  font-size: 1.7vh;
+  margin: 0 1.1rem;
   }
   
   .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
   }
   
-
   .ul_opcions_recuperacion {
-    /* background-color: red; */
     width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
+    height: 10vh;
   }
 }
 
-@media screen and (max-width: 764px ) {
+@media screen and (max-width: 375px ) {
 
   .container {
     /* background-color:rgb(12, 1, 104); */
@@ -854,27 +786,24 @@ button:hover::after {
   }
   
   .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
+    width: 70vh;
     height: 130vh;
   }
   
   .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
+    width: 40vh;
+    height: auto;
     top: 25vh;
   }
   
   .title {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   
   .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
+    font-size: 2.5vh;
+    height: 9vh;
+    gap: 3vh;
   }
   
   .api {
@@ -888,410 +817,49 @@ button:hover::after {
     font-weight: 600;
   }
   
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
-  
   .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
     display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
   
   .inputs {
-    margin-top: .5rem;
+    margin-top: .4rem;
   }
 
   .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
+    width: 24vh;
+    height: .5vh;
+    margin: .7rem .2rem;
+    padding: 1.3rem;
   }
   
   .input_login_down {
-    margin-bottom: 1rem;
+    margin-bottom: 1.9rem;
   }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
+
+  .form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
 
   .button_login,
   .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
+  padding: 2.5vh 2vh;
+  font-size: 14px;
+  margin: 0 1.1rem;
   }
   
   .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
   }
   
-
   .ul_opcions_recuperacion {
-    /* background-color: red; */
     width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
-  }
-}
-
-@media screen and (max-width: 500px ) {
-
-  .container {
-    /* background-color:rgb(12, 1, 104); */
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
-    height: 130vh;
-  }
-  
-  .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
-    top: 25vh;
-  }
-  
-  .title {
-    font-size: 1.2rem;
-  }
-  
-  .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
-  }
-  
-  .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
-  
-  .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
-  }
-  
-  .inputs {
-    margin-top: .5rem;
-  }
-
-  .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
-  }
-  
-  .input_login_down {
-    margin-bottom: 1rem;
-  }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-  }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
-
-  .button_login,
-  .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
-  }
-  
-  .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
-  }
-  
-
-  .ul_opcions_recuperacion {
-    /* background-color: red; */
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
-  }
-}
-
-@media screen and (max-width: 414px ) {
-
-  .container {
-    /* background-color:rgb(12, 1, 104); */
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
-    height: 130vh;
-  }
-  
-  .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
-    top: 25vh;
-  }
-  
-  .title {
-    font-size: 1.2rem;
-  }
-  
-  .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
-  }
-  
-  .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
-  
-  .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
-  }
-  
-  .inputs {
-    margin-top: .5rem;
-  }
-
-  .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
-  }
-  
-  .input_login_down {
-    margin-bottom: 1rem;
-  }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-  }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
-
-  .button_login,
-  .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
-  }
-  
-  .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
-  }
-  
-
-  .ul_opcions_recuperacion {
-    /* background-color: red; */
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
+    height: 10vh;
   }
 }
 
@@ -1304,443 +872,76 @@ button:hover::after {
   }
   
   .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
+    width: 70vh;
     height: 130vh;
   }
   
   .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
-    top: 25vh;
+    width: 55vh;
+    height: auto;
+    top: 20vh;
   }
   
   .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   
   .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
+    height: 9vh;
+    gap: 3vh;
   }
   
   .api {
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
+    width: 21vh;
+    height: 10vh;
   }
   
   .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
     display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
   
   .inputs {
-    margin-top: .5rem;
+    margin-top: .4rem;
   }
 
   .input_login {
-    width: 25vh;
+    width: 35vh;
     height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
+    margin: .7rem .2rem;
+    padding: 1.3rem;
   }
   
   .input_login_down {
-    margin-bottom: 1rem;
+    margin-bottom: 1.9rem;
   }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
+
+  .form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
 
   .button_login,
   .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
+  padding: 3vh 2vh;
+  font-size: 14px;
+  margin: 0 1.1rem;
   }
   
   .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
   }
   
-
   .ul_opcions_recuperacion {
-    /* background-color: red; */
     width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
-  }
-}
-
-@media screen and (max-width: 365px ) {
-
-  .container {
-    /* background-color:rgb(12, 1, 104); */
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
-    height: 130vh;
-  }
-  
-  .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
-    top: 25vh;
-  }
-  
-  .title {
-    font-size: 1.2rem;
-  }
-  
-  .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
-  }
-  
-  .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
-  
-  .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
-  }
-  
-  .inputs {
-    margin-top: .5rem;
-  }
-
-  .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
-  }
-  
-  .input_login_down {
-    margin-bottom: 1rem;
-  }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-  }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
-
-  .button_login,
-  .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
-  }
-  
-  .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
-  }
-  
-
-  .ul_opcions_recuperacion {
-    /* background-color: red; */
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
-  }
-}
-
-@media screen and (max-width: 260px ) {
-
-  .container {
-    /* background-color:rgb(12, 1, 104); */
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 60vh;
-    height: 130vh;
-  }
-  
-  .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
-    top: 25vh;
-  }
-  
-  .title {
-    font-size: 1.2rem;
-  }
-  
-  .content_api {
-    background-color: yellow;
-    gap: 2vh;
-    font-size: 14px;
-  
-  }
-  
-  .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .facebook {
-    background: #0052f6;
-    color:#fff;
-  }
-  
-  .google {
-    background: #d5d5d5;
-    color:rgb(0, 0, 0);
-  }
-  
-  .form_session {
-    /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-    width: 33vh;
-    height: 35.5vh;
-    border-top: 2px solid #ffffff2c;
-  }
-  
-  .inputs {
-    margin-top: .5rem;
-  }
-
-  .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
-    border-radius: 5px;
-    background: #00000073;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 1px solid #e3b70572;
-  }
-  
-  .facebook:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .google:focus {
-    border: 1px solid #ffcc00;
-  }
-  
-  .input_login::placeholder {
-    color: rgb(255, 255, 255);
-  }
-  
-  .input_login_down {
-    margin-bottom: 1rem;
-  }
-  
-  .input_login:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-  }
-  .input_login::placeholder { color: #ffffff; }
-  .input_login::placeholder:focus { color: #b08d02; }
-  
-
-  .button_login,
-  .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
-  background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
-  border: 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px #b08d02;
-  outline: transparent;
-  position: relative;
-  margin: 0 .7rem;
-  }
-  
-  .button_login::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: "Login";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
-    text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
-    clip-path: var(--slice-0);
-  }
-  
-
-  .ul_opcions_recuperacion {
-    /* background-color: red; */
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
+    height: 10vh;
   }
 }
