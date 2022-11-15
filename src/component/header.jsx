@@ -1,7 +1,7 @@
 import { NavDesktop } from "./navDesktop";
 import { NavIphone } from "./NavIphone";
 import CardPerfil from "./menuPerfil";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import styles from "./comp-css/header.module.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,7 +36,7 @@ export default function Header() {
                         </Link>
                     </ul>
         
-                    <Link to="" className={styles.linklogo}>
+                    <Link to="/movies" className={styles.linklogo}>
                         <h1 className={styles.logo}>MovieAC+</h1>
                     </Link>
                     

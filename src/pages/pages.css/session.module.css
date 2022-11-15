@@ -103,6 +103,10 @@
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
   width: 30vh;
   height: 35.5vh;
   border-top: 2px solid #ffffff2c;
@@ -144,8 +148,11 @@
 .input_login::placeholder { color: #ffffff; }
 .input_login::placeholder:focus { color: #b08d02; }
 
+
 .form_button {
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .button_login,
@@ -325,10 +332,10 @@ button:hover::after {
   
   .form_session {
     /* background-color: rgb(1, 145, 161); */
-    flex-direction: column;
-    align-items: flex-start;
     display: flex;
-    width: 33vh;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     height: 35.5vh;
     border-top: 2px solid #ffffff2c;
   }
@@ -456,7 +463,10 @@ button:hover::after {
   
   .form_session {
     /* background-color: rgb(1, 145, 161); */
-    width: 33vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     height: 35.5vh;
     border-top: 2px solid #ffffff2c;
   }
@@ -585,7 +595,10 @@ button:hover::after {
   
   
   .form_session {
-    width: 33vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     height: 35.5vh;
   }
   
