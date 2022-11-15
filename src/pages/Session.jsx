@@ -1,4 +1,4 @@
-import styles from "./module-css/session.module.css";
+import styles from "./pages.css/session.module.css";
 
 export default function Session() {
   return (
@@ -20,7 +20,7 @@ export default function Session() {
             <form className={styles.form_session}>
                 <div className={styles.inputs}>
                     <input className={styles.input_login} type="text" placeholder="User"></input>
-                    <input className={styles.input_login+" "+styles.input_login_down} type="text" placeholder="Password"></input>
+                    <input className={styles.input_login+" "+styles.input_login_down} type="password" placeholder="Password"></input>
                 </div>
                 <div className={styles.form_button}>
                   <button className={styles.button_login}>Login</button>

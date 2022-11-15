@@ -1,4 +1,9 @@
 .grid {
+  position: relative;
+  top: 15rem;
+}
+
+.grid {
   display: grid;
   margin: 0rem 0rem;
   padding: 0;

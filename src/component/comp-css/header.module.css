@@ -19,20 +19,6 @@
     font-weight: small;
 }
 
-.btn_primary {
-    color: #fff;
-    background: #16a083;
-}
-
-.btn_primary:hover {
-    background: #117964;
-    transition: background 0.3s ease-in-out;
-}
-
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
-
 .navbar input[type="checkbox"],
 .navbar .hamburger_lines {
     display: none;
@@ -47,7 +33,6 @@
     opacity: 0.90;
     height: 70px;
     z-index: 12;
-    margin-top: -4.5rem;
 }
 
 .navbar_container {
