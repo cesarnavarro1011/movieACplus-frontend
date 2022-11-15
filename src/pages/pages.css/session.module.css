@@ -26,6 +26,7 @@
   text-align: center;
   margin-left: 1rem;
 }
+
 .container {
   /* background-color:rgb(12, 1, 104); */
   width: 100%;
@@ -52,13 +53,13 @@
   height: 55vh;
   margin-right: 0vh;
   border-radius: 10px;
-  border: 1px solid #e3b7051d;;
+  border: 1px solid #e3b7051d;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   display: flex;
   position: absolute;
-  top: 25vh;
+  top: 31vh;
 }
 
 .title {
@@ -81,11 +82,12 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 15vh;
+  width: 14vh;
   height: 5vh;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.8vh;
 }
 
 .facebook {
@@ -108,20 +110,19 @@
   justify-content: center;
   width: 100%;
   width: 30vh;
-  height: 35.5vh;
+  height: 31vh;
   border-top: 2px solid #ffffff2c;
 }
 
 .input_login {
   width: 23.5vh;
   height: 1vh;
-  margin: 1.5rem 0;
   border-radius: 5px;
   background: #00000073;
   border-style: none;
   color: rgb(255, 255, 255);
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   border: 1px solid #e3b70572;
 }
 
