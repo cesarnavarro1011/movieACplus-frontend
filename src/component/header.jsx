@@ -29,7 +29,7 @@ export default function Header() {
         
                             {/* <NavIphone title="Movie"/> */}
                             {/* <NavIphone title="series"/> */}
-                        <Link to="" >
+                        <Link to="/" >
                             <li className={styles.nav_items_opcions+" "+styles.item_account}>Account
                                 {/* <CardPerfil/> */}
                             </li>

@@ -3,15 +3,17 @@ import Header from "./component/header";
 import ListMovies from "./component/listMovies";
 import CardDetails from "./pages/cardDetails";
 import Session from "./pages/Session";
+import NotFound from "./pages/notFound404";
 
 export default function MovieAC() {
   return (
     <div>
       <Header/> 
         <Routes>
-              <Route exact path="/movies/:id" element={<CardDetails />}></Route>
               <Route path="/movies" element={<ListMovies />}></Route>
-              <Route path="/session" element={<Session />}></Route>
+              <Route exact path="movies/:id" element={<CardDetails />}></Route>
+              <Route path="session" element={<Session />}></Route>
+              <Route path="*" element={<NotFound />}></Route>
         </Routes>
     </div>
   ); 
