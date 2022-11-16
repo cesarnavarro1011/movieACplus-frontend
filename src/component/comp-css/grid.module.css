@@ -68,31 +68,31 @@
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 800px) { 
 
   .grid {
-    grid-template-columns: repeat(auto-fill,220px);
+    grid-template-columns: repeat(auto-fill,260px);
   }
 }
 
 @media (max-width: 768px) { 
 
   .grid {
-    grid-template-columns: repeat(auto-fill,220px);
+    grid-template-columns: repeat(auto-fill,250px);
   }
 }
 
 @media (max-width: 414px) { 
 
   .grid {
-    grid-template-columns: repeat(auto-fill,180px);
+    grid-template-columns: repeat(auto-fill,199px);
   }
 }
 
 @media (max-width: 375px) { 
 
   .grid {
-    grid-template-columns: repeat(auto-fill,160px);
+    grid-template-columns: repeat(auto-fill,180px);
   }
 }
 

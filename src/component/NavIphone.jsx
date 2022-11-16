@@ -12,7 +12,7 @@ export function NavIphone({ title }) {
                     <li className={styles.item_iphone}><Link to="3">kids</Link></li>
                     <li className={styles.item_iphone}><Link to="3">comedy</Link></li>
                     <li className={styles.item_iphone}><Link to="3">terror</Link></li>
-                    <li className={styles.item_iphone}><Link to="3">action</Link></li>
+                    <li className={styles.item_iphone}><Link to="3">suspense</Link></li>
                 </ul>
             </details>
         </div>

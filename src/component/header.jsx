@@ -20,19 +20,19 @@ export default function Header() {
         
                     <ul className={styles.menu_items}>
         
-                        <Link className={styles.a_Movie} to="">
-                            {/* <NavDesktop title="Movie"/> */}
+                        <Link className={styles.a_Movie} to="movie">
+                            <NavDesktop title="Movie"/>
                         </Link>
                         <Link className={styles.a_series} to="">
-                            {/* <NavDesktop title="series"/> */}
+                            <NavDesktop title="series"/>
                         </Link>
         
-                            {/* <NavIphone title="Movie"/> */}
-                            {/* <NavIphone title="series"/> */}
+                            <NavIphone title="Movie"/>
+                            <NavIphone title="series"/>
                         <Link to="/" >
                             <li className={styles.nav_items_opcions+" "+styles.item_account}>Account
-                                {/* <CardPerfil/> */}
                             </li>
+                                {/* <CardPerfil/> */}
                         </Link>
                     </ul>
         
@@ -42,7 +42,6 @@ export default function Header() {
                     
                     <input className={styles.search} type="search" placeholder="search"/>
                 </div> 
-                <input className={styles.search_iphone} type="search" placeholder="search"/>
             </nav>
         </header>
     );

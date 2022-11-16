@@ -82,6 +82,7 @@
 .search::placeholder { color: #6e6e6e; }
 .search::placeholder:focus { color: #b08d02; }
 
+
 .search_iphone {
     display:none;
 }
@@ -219,7 +220,7 @@ ul .ul_items {
 @media (max-width: 2561px) { 
 
     .navbar {
-        background: rgba(0, 0, 0, 0.909);
+        background: rgba(224, 19, 19, 0.909);
         height: 7rem;
     }
 
@@ -292,8 +293,8 @@ ul .ul_items {
 
     ul .ul_items {
         width: 24vh;
-        height: 25vh;
-        top: 7.6vh;
+        height: 26vh;
+        top: 8.6vh;
         padding: 1rem 0;
     }
 
@@ -425,7 +426,7 @@ ul .ul_items {
     }
 }
 
-@media (max-width: 1280px) { 
+@media (max-width: 1281px) { 
 
     .navbar {
         background: rgba(0, 0, 0, 0.909);
@@ -457,9 +458,9 @@ ul .ul_items {
     }
 
     ul .ul_items {
-        width: 24vh;
+        width: 25vh;
         height: 32vh;
-        top: 8vh;
+        top: 11.2vh ;
         padding: 1rem 0;
     }
 
@@ -482,20 +483,52 @@ ul .ul_items {
 @media (max-width: 1025px) { 
 
     .logo {
-        font-size: 2.4rem;
-        width: 0rem;
-        height: 2rem;
-        line-height: 2rem;
+        /* background-color: red; */
+        font-size: 2.2rem;
+        min-width: 10vh;
+        max-width: 100vh;
+        width: 45%;
+        height: 4rem;
+        line-height: 4rem;
     }
 
     .search {
-        width: 20vh;
+        /* background-color: red; */
+        min-width: 5vh;
+        width: 30%;
         height: 2rem;
         font-size: 1rem;
+        margin-left: -16%;
+    }
+
+    .nav_items_opcions {
+        width: 6rem;
+    }
+
+    .a_Movie, .a_series {
+        font-size: 1rem;
+    }
+
+    ul .ul_items {
+        width: 25vh;
+        height: 29vh;
+        top: 8.4vh ;
+        padding: 1rem 0;
+    }
+
+    .item a {
+        font-size: .9rem;
     }
 }
 
-@media (max-width: 821px) { 
+@media (max-width: 991px) { 
+
+    ul .ul_items {
+        width: 15vh;
+        height: 17vh;
+        top: 5vh ;
+        padding: 1rem 0;
+    }
 
     .logo {
         font-size: 2rem;
@@ -579,6 +612,15 @@ ul .ul_items {
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.797);
     overflow: scroll;
     margin-top: 4.5rem;
+    overflow: auto;
+    overflow: overlay;
+    }
+        
+    .navbar .menu_items::-webkit-scrollbar {
+        display: initial;
+    }
+    .navbar .menu_items:hover::-webkit-scrollbar-thumb {
+        background-color:  #E3B505;
     }
 
     .search_iphone_menu {
@@ -598,9 +640,10 @@ ul .ul_items {
         width: 100%;
         height: 9vh;
         line-height: 9vh;
-        font-size: 2.2rem;
+        font-size: 1.9rem;
         text-align: center;
     }
+
     
     .ul_items_iphone {
         /* background-color: rgb(4, 252, 235); */
@@ -623,7 +666,7 @@ ul .ul_items {
         /* background-color: rgb(252, 223, 4); */
         text-decoration: none;
         padding: 1.8rem 4rem;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         line-height: 100%;
         color: white;
     }
@@ -688,22 +731,64 @@ ul .ul_items {
         top: .9rem;
         width: 15rem;
         display: block;
-    }   
+    } 
+    
+    .search_iphone_menu:focus {
+        box-shadow: 0 0 0 .15vw #E3B505;
+        outline: #E3B505;
+        border-width: 1px;
+    }
+    .search_iphone_menu::placeholder { color: #6e6e6e; }
+    
+
+    
+}
+
+@media (max-width: 768px) {
+
+    .search_iphone_menu {
+        background-color: rgb(0, 0, 0);
+        height: 4vh;
+        width: 14rem;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        border-style: none;
+        padding: 1rem 1rem;
+        border:#4e4521;
+        border-style: solid;
+        border-width: 1px;
+        position: absolute;
+        left: 4.5rem;
+        top: .9rem;
+        display: block;
+    }
+    
+    .container_menu_iphone {
+        margin-top: 0rem;
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+    }
 }
 
 @media (max-width: 500px) {
-    html {
-    font-size: 65%;
-    }
-    
+
     .navbar {
-        height: 50px;
+        height: 55px;
     }
-    
+        .navbar .menu_items {
+        max-width: 230px;
+        margin-top: 3.9rem;
+    }
+
+    .navbar_container .hamburger_lines {
+        top: 19px;
+    }
     .navbar .menu_items {
         padding-top: 10px;
         background: rgb(0, 0, 0);
         height: 100vh;
+        max-width: 20px;
         max-width: 220px;
         transform: translate(-100%);
         margin-left: -60px;
@@ -719,11 +804,11 @@ ul .ul_items {
     }
 
     .logo {
-        position: absolute;
-        top: 06px;
-        right: 15px;
-        font-size: 2.7rem;
-        width: 19vh;
+        width: 10rem;
+        right: 0px;
+        font-size: 2rem;
+        line-height: 6vh;
+        height: 5vh;
     }
 
     .navbar .menu_items li {
@@ -738,33 +823,118 @@ ul .ul_items {
 
     .search_iphone_menu {
         background-color: rgb(0, 0, 0);
-        height: 4vh;
-        width: 14rem;
-        border-radius: 5px;
-        color: rgb(255, 255, 255);
-        border-style: none;
-        padding: 1rem 1rem;
-        border:#4e4521;
-        border-style: solid;
+        width: 9rem;
+        left: 4.7rem;
+    }
+
+    
+    .search:focus {
+        box-shadow: 0 0 0 .15vw #E3B505;
+        outline: #E3B505;
         border-width: 1px;
-        position: absolute;
-        left: 8rem;
-        top: .9rem;
-        display: block;
+    }
+    .search::placeholder { color: #6e6e6e; }
+    .search::placeholder:focus { color: #b08d02; }
+    
+    
+    .nav_items_options_iphone {
+        background-color: rgb(201, 134, 27);
+        height: 8vh;
+        line-height: 8vh;
+        font-size: 1.7rem;
+    }
+    
+    .ul_items_iphone {
+        /* background-color: rgb(4, 252, 235); */
+        text-align: center;
+        height: 40vh;
+        text-align: center;
+        width: 100%;
+        margin: 0 0 0 1rem;
+        padding: 1rem 0;
+    }
+
+    .container_menu_iphone {
+        margin-top: 0rem;
+        top: 4rem;
+        left: 0rem;
+    }
+
+    ul .item_iphone {
+        /* background-color: rgb(169, 252, 4); */
+        height: 1rem;
+        padding: 0rem 0;
+    }
+
+    .item_iphone a {
+        /* background-color: rgb(252, 223, 4); */
+        padding: 1.8rem 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .navbar {
+        height: 50px;
+    }
+    
+    .navbar .menu_items {
+        padding-top: 10px;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        max-width: 20px;
+        max-width: 230px;
+        transform: translate(-100%);
+        margin-left: -60px;
+        padding-left: 30px;
+        margin-top: 3.6rem;
+    }
+
+    .navbar_container .hamburger_lines {
+        height: 20px;
+        width: 30px;
+        top: 17px;
+        left: 20px;
+    }
+
+    .logo {
+        width: 8rem;
+        right: 25px;
+        font-size: 2rem;
+        line-height: 4.5vh;
+        top: 1vh;
+    }
+
+    .navbar .menu_items li {
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .search_iphone {
+        display: none;
+    }
+
+    .search_iphone_menu {
+        background-color: rgb(0, 0, 0);
+        width: 9rem;
+        left: 5rem;
     }  
 
     .container_menu_iphone {
         margin-top: 0rem;
         position: relative;
-        top: 5rem;
+        top: 4rem;
         left: 0rem;
     }
 
     .nav_items_options_iphone {
-        background-color: rgb(255, 183, 0);
+        background-color: rgb(201, 134, 27);
         height: 8vh;
         line-height: 8vh;
-        font-size: 2.2rem;
+        font-size: 1.7rem;
     }
     
     .ul_items_iphone {
@@ -780,16 +950,16 @@ ul .ul_items {
     ul .item_iphone {
         /* background-color: rgb(169, 252, 4); */
         height: 1rem;
-        padding: 1rem 0;
-        text-decoration: none;
+        padding: 0rem 0;
     }
 
     .item_iphone a {
         /* background-color: rgb(252, 223, 4); */
-        padding: 1.4rem 4rem;
-        font-size: 1.5rem;
+        padding: 1.8rem 4rem;
+        font-size: 1.2rem;
     }
 }
+
 
 @media (orientation: landscape) and (max-height: 500px) {
 .showcase_area {

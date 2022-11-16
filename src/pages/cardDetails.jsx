@@ -1,10 +1,25 @@
-import { Link } from "react-router-dom";
-import movies from "../movies.json";
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { get } from "../utils/httpClient";
 
 import styles from "./pages.css/cardDetails.module.css"
 
-export default function CardDetails({movie}) {
-  // const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+export default function CardDetails() {
+
+    const { movieid } = useParams();
+    const [movie, setMovie] = useState(null);
+    // console.log(movie);
+
+    useEffect(()=>{
+        get("/movie/" + movieid).then(data=> {
+            setMovie(data);
+        })
+    }, [movieid])  
+    
+    if(!movie) {
+        return null;
+    }
+    const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
 
     return (
         <div className={styles.container}>
@@ -18,26 +33,21 @@ export default function CardDetails({movie}) {
                 </div>
 
                     <div className={styles.video_movie}>
-                        {/* <video src="video.mp4" width="640" height="480"></video> */}
+                        {/* <video src="video.mp4" width="640" height="40"></video> */}
                     </div>
 
                     <div className={styles.container_info}>
                         <div className={styles.container_img}>
-                        {/* <img className={styles.img} src={imageUrl} alt={movie.title}/> */}
-                            <img className={styles.img} src="" alt=""/>
+                            <img className={styles.img} src={imageUrl} alt=""/>
                         </div>
 
                         <div className={styles.description}>
-                            <h1 className={styles.title}>Title</h1>
-                            <p>
-                            lorem awwagagagahashadhah
-                            hahdhdahhahdagsagasgasgag
-                            safsa fsafagsagagagasgsag
-                            sgagasgasgsagsagagagsgagg
-                            sagasgsagsagasgsagsgagasg
-                            sgsagasgsgsagasgsgagsagsa
-                            asgsagagagasgasgagaggsgaa
-                            </p>
+                            <h1 className={styles.title}>{movie.title}</h1>
+
+                            <strong className={styles.title}></strong> {movie.original_language}
+                            <strong className={styles.title}></strong> {movie.vote_average}
+                            <strong className={styles.title}></strong> {movie.release_date}
+                            <p>{movie.overview}</p>
                         </div>
                     </div>
                 </div>
