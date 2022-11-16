@@ -28,6 +28,7 @@ export default function CardDetails({movie}) {
                         </div>
 
                         <div className={styles.description}>
+                            <h1 className={styles.title}>Title</h1>
                             <p>
                             lorem awwagagagahashadhah
                             hahdhdahhahdagsagasgasgag

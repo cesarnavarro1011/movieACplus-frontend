@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./component/header";
 import ListMovies from "./component/listMovies";
 import CardDetails from "./pages/cardDetails";
-import Session from "./pages/Session";
 import NotFound from "./pages/notFound404";
+import Session from "./pages/Session";
 
 export default function MovieAC() {
   return (
