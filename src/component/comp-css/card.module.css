@@ -1,22 +1,16 @@
-:root {
-  --container_kids-primary: #06D6A0;
-  --container_kids-secondary: #048A81;
-  --container_kids-tertiary: #F8F32B;
-}
-
 .link_card_movies {
   text-decoration: none;
 }
 
 .container_cards {
-  background-color: black;
+  background: rgb(0, 0, 0);
   display:flex;
   width: 100%;
   justify-content: center;
 }
 
 .card {
-  background: rgb(32, 32, 32);
+  background: rgb(227, 180, 12);
   box-sizing: border-box;
   border-radius: 1em;
   position: relative;
@@ -44,7 +38,7 @@
   top: 0;
   left: 0;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.147);
-  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+  background: linear-gradient(to bottom, #d2960a, #d59711);
 }
 
 .card_info {

@@ -9,7 +9,7 @@
 }
 
 .subContainer {
-  background-color: rgb(17, 17, 17);
+  /* background-color: rgb(17, 17, 17); */
   width: 90%;
   min-width: 50vh;
   height: 150vh;
@@ -31,6 +31,7 @@
   width: 100%;
   text-align: center;
   justify-content: center;
+  /* display: none; */
 }
 
 .opcion {
@@ -50,7 +51,7 @@
   /* background-color: rgba(247, 4, 4, 0.982); */
   min-width: 30vh;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center ;
@@ -80,8 +81,8 @@
 .container_img {
   /* background-color: rgba(255, 255, 255, 0.053); */
   min-width: 20vh;
-  width: 19%;
-  height: 31vh;
+  width: 26%;
+  height: 37vh;
 }
 
 .img {
@@ -166,7 +167,7 @@
 @media screen and (max-width: 780px) {
   
   .opcions {
-    gap: 1vh;
+    gap: 3vh;
     height: 10vh;
   }
 
