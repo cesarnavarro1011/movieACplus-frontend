@@ -9,7 +9,7 @@ import Session from "./pages/Session";
 export default function MovieAC() {
   return (
     <div>
-      <Header/> 
+    <Header/>
         <Routes>
               <Route path="movies" element={<ListMovies />}></Route>
               <Route exact path="movies/:movieid" element={<CardDetails />}></Route>

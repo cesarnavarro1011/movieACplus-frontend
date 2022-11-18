@@ -1,6 +1,12 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
 import { get } from "../utils/httpClient";
+import { Link, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { HiUsers } from "react-icons/hi";
+import { AiFillStar } from "react-icons/ai";
+import { RiMovie2Fill } from "react-icons/ri";
+import { BsCalendar3 } from "react-icons/bs";
+import { IoLanguage } from "react-icons/io5";
+import Loading from "../component/loading";
 
 import styles from "./pages.css/cardDetails.module.css"
 
@@ -8,15 +14,21 @@ export default function CardDetails() {
 
     const { movieid } = useParams();
     const [movie, setMovie] = useState(null);
-    // console.log(movie);
+    const [loading, setLoading] = useState(false);
 
     useEffect(()=>{
+        setLoading(true);
         get("/movie/" + movieid).then(data=> {
+            setLoading(false);
             setMovie(data);
         })
     }, [movieid])  
     
-    if(!movie) {
+    if (loading) {
+        return <Loading/>;
+    }
+
+    if (!movie) {
         return null;
     }
     const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
@@ -44,9 +56,11 @@ export default function CardDetails() {
                         <div className={styles.description}>
                             <h1 className={styles.title}>{movie.title}</h1>
 
-                            <strong className={styles.title}></strong> {movie.original_language}
-                            <strong className={styles.title}></strong> {movie.vote_average}
-                            <strong className={styles.title}></strong> {movie.release_date}
+                                <IoLanguage className={styles.Language}/>{movie.original_language}
+                                <RiMovie2Fill className={styles.genre}/>{movie.genre}
+                                <AiFillStar className={styles.star}/>{movie.vote_average}
+                                <HiUsers className={styles.populary}/>{movie.popularity}
+                                <BsCalendar3 className={styles.calendar}/>{movie.release_date}
                             <p>{movie.overview}</p>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ export default function Header() {
                         <Link to="/" >
                             <li className={styles.nav_items_opcions+" "+styles.item_account}>Account
                             </li>
-                                {/* <CardPerfil/> */}
+                                <CardPerfil/>
                         </Link>
                     </ul>
         
@@ -40,7 +40,9 @@ export default function Header() {
                         <h1 className={styles.logo}>MovieAC+</h1>
                     </Link>
                     
-                    <input className={styles.search} type="search" placeholder="search"/>
+                    <form>
+                        <input className={styles.search} type="search" placeholder="search"/>
+                    </form>
                 </div> 
             </nav>
         </header>

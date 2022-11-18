@@ -220,7 +220,7 @@ ul .ul_items {
 @media (max-width: 2561px) { 
 
     .navbar {
-        background: rgba(224, 19, 19, 0.909);
+        /* background: rgba(224, 19, 19, 0.909); */
         height: 7rem;
     }
 
@@ -444,7 +444,7 @@ ul .ul_items {
     }
 
     .search {
-        width: 30vh;
+        width: 40vh;
         font-size: 1rem;
     }
 
@@ -873,7 +873,6 @@ ul .ul_items {
     }
 }
 
-
 @media (max-width: 375px) {
 
     .navbar {
@@ -959,7 +958,6 @@ ul .ul_items {
         font-size: 1.2rem;
     }
 }
-
 
 @media (orientation: landscape) and (max-height: 500px) {
 .showcase_area {
