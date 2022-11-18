@@ -99,7 +99,7 @@
 @media (max-width: 360px) { 
 
   .grid {
-    grid-template-columns: repeat(auto-fill,157px);
+    grid-template-columns: repeat(auto-fill,172px);
   }
 }
 
