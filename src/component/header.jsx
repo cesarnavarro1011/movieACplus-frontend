@@ -41,7 +41,7 @@ export default function Header() {
                     </Link>
                     
                     <form>
-                        <input className={styles.search} type="search" placeholder="search"/>
+                        {/* <input className={styles.search} type="search" placeholder="search"/> */}
                     </form>
                 </div> 
             </nav>
