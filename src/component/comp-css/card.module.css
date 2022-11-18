@@ -262,7 +262,7 @@
   }
   
   .text_title {
-    height: 3rem;
+    height: 3.4rem;
     font-size: 1.6rem;
   }
 
@@ -276,14 +276,13 @@
   
   .star {
     font-size: 30px;
-    position: relative;
     top: 6px;
     left: 3px;
     fill: #e0af44;
   }
 
   .release_date {
-    font-size: 1.5vh;
+    font-size: 1.9vh;
   }
 
   .calendar {
