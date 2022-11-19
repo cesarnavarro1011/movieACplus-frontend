@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import { NavDesktop } from "./navDesktop";
 import { NavIphone } from "./NavIphone";
 import CardPerfil from "./menuPerfil";
-import { Link } from "react-router-dom";
 
 import styles from "./comp-css/header.module.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Search from "./search";
 
 export default function Header() {
     return (
@@ -39,10 +39,7 @@ export default function Header() {
                     <Link to="/movies" className={styles.linklogo}>
                         <h1 className={styles.logo}>MovieAC+</h1>
                     </Link>
-                    
-                    <form>
-                        <input className={styles.search} type="search" placeholder="search"/>
-                    </form>
+                        <Search/>
                 </div> 
             </nav>
         </header>

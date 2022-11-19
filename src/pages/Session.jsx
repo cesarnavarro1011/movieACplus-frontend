@@ -1,3 +1,6 @@
+import { BsFacebook } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
+
 import styles from "./pages.css/session.module.css";
 
 export default function Session() {
@@ -14,8 +17,8 @@ export default function Session() {
         <div className={styles.content_session}>
           <h2 className={styles.title}>Iniciar Session</h2>
             <div className={styles.content_api}>
-                <a className={styles.api+" "+styles.facebook} href="g">facebook</a>
-                <a className={styles.api+" "+styles.google} href="g" >Google</a>
+                <a className={styles.api+" "+styles.facebook} href="g">facebook<BsFacebook className={styles.icon_facebook}/> </a>
+                <a className={styles.api+" "+styles.google} href="g" >Google<FcGoogle className={styles.icon_google}/></a>
             </div>
             <form className={styles.form_session}>
                 <div className={styles.inputs}>

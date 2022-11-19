@@ -58,31 +58,6 @@
     text-decoration: none;
 }
 
-.search {
-    height: 4vh;
-    width: 40vh;
-    margin: 0rem 0rem;
-    border-radius: 5px;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-style: none;
-    padding: 1rem;
-    border:#4e4521;
-    border-style: solid;
-    border-width: 1px;
-    
-}
-
-.search:focus {
-    box-shadow: 0 0 0 .15vw #E3B505;
-    outline: #E3B505;
-    border-width: 1px;
-    
-}
-.search::placeholder { color: #6e6e6e; }
-.search::placeholder:focus { color: #b08d02; }
-
-
 .search_iphone {
     display:none;
 }
@@ -188,11 +163,6 @@ ul .ul_items {
         font-size: 4.5rem;
     }
 
-    .search {
-        width: 30vh;
-        font-size: 2rem;
-    }
-
     .nav_items_opcions {
         height: 9rem;
     }
@@ -231,11 +201,6 @@ ul .ul_items {
     .logo {
         font-size: 3.5rem;
         width: 23rem;
-    }
-
-    .search {
-        width: 30vh;
-        font-size: 1.7rem;
     }
 
     .nav_items_opcions {
@@ -278,11 +243,6 @@ ul .ul_items {
         width: 18rem;
     }
 
-    .search {
-        width: 30vh;
-        font-size: 1rem;
-    }
-
     .nav_items_opcions {
         height: 5rem;
     }
@@ -323,17 +283,11 @@ ul .ul_items {
         width: 14rem;
     }
 
-    .search {
-        width: 30vh;
-        font-size: 1.5rem;
-    }
-
     ul .ul_items {
         width: 20vh;
         height: 23vh;
         top: 8vh;
     }
-
 }
 
 @media (max-width: 1440px) { 
@@ -350,11 +304,6 @@ ul .ul_items {
     .logo {
         font-size: 2.2rem;
         width: 12rem;
-    }
-
-    .search {
-        width: 30vh;
-        font-size: 1.2rem;
     }
 
     .nav_items_opcions {
@@ -397,11 +346,6 @@ ul .ul_items {
         width: 12rem;
     }
 
-    .search {
-        width: 30vh;
-        font-size: 1.2rem;
-    }
-
     .nav_items_opcions {
         height: 4rem;
     }
@@ -441,11 +385,6 @@ ul .ul_items {
         font-size: 2rem;
         width: 0rem;
         height: 2rem;
-    }
-
-    .search {
-        width: 40vh;
-        font-size: 1rem;
     }
 
     .nav_items_opcions {
@@ -492,15 +431,6 @@ ul .ul_items {
         line-height: 4rem;
     }
 
-    .search {
-        /* background-color: red; */
-        min-width: 5vh;
-        width: 30%;
-        height: 2rem;
-        font-size: 1rem;
-        margin-left: -16%;
-    }
-
     .nav_items_opcions {
         width: 6rem;
     }
@@ -537,11 +467,6 @@ ul .ul_items {
         line-height: 2rem;
     }
 
-    .search {
-        width: 16.5vh;
-        height: 2rem;
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -734,9 +659,10 @@ ul .ul_items {
     } 
     
     .search_iphone_menu:focus {
-        box-shadow: 0 0 0 .15vw #E3B505;
         outline: #E3B505;
         border-width: 1px;
+        box-shadow: 1px 1px 21px 1px #E3B505;
+        border: 2px solid #E3B505;
     }
     .search_iphone_menu::placeholder { color: #6e6e6e; }
     
@@ -827,7 +753,7 @@ ul .ul_items {
         left: 4.7rem;
     }
 
-    
+/*     
     .search:focus {
         box-shadow: 0 0 0 .15vw #E3B505;
         outline: #E3B505;
@@ -835,7 +761,7 @@ ul .ul_items {
     }
     .search::placeholder { color: #6e6e6e; }
     .search::placeholder:focus { color: #b08d02; }
-    
+     */
     
     .nav_items_options_iphone {
         background-color: rgb(201, 134, 27);

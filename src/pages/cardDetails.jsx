@@ -15,7 +15,7 @@ export default function CardDetails() {
     const { movieid } = useParams();
     const [movie, setMovie] = useState(null);
     const [loading, setLoading] = useState(false);
-
+    
     useEffect(()=>{
         setLoading(true);
         get("/movie/" + movieid).then(data=> {

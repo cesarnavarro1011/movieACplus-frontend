@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./component/header";
 import ListMovies from "./component/listMovies";
 import CardDetails from "./pages/cardDetails";
@@ -11,10 +11,11 @@ export default function MovieAC() {
     <div>
     <Header/>
         <Routes>
-              <Route path="movies" element={<ListMovies />}></Route>
-              <Route exact path="movies/:movieid" element={<CardDetails />}></Route>
-              <Route path="session" element={<Session />}></Route>
-              <Route path="*" element={<NotFound />}></Route>
+              <Route path="movies" element={<ListMovies />}/>
+              <Route exact path="movies/:movieid" element={<CardDetails />}/>
+              <Route path="session" element={<Session />}/>
+              <Route path="*" element={<NotFound />}/>
+              <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
     </div>
   ); 
