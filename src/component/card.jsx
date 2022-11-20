@@ -12,7 +12,7 @@ export function Card({movie}) {
                     <img className={styles.card_img} src={imageUrl} alt={movie.title}/>
                     <div className={styles.card_info}>
                         <p className={styles.text_title}>{movie.title}</p>
-                        <p className={styles.gender}>fantasy</p>
+                        <p className={styles.gender}>genre</p>
                         <span className={styles.text_title +" "+styles.score}>{movie.vote_average}
                             <AiFillStar className={styles.star}/>
                         </span>
