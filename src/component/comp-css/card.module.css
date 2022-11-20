@@ -446,8 +446,8 @@
   }
   
   .text_title {
-    height: 4.5rem;
-    font-size: 1.2rem;
+    height: 4rem;
+    font-size: 1.3rem;
   }
 
   .gender {
@@ -456,11 +456,26 @@
   }
 
   .score {
-    width: 59%;
+    width: 50%;
+  }
+
+  .star {
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    fill: #e0af44;
   }
 
   .release_date {
-    font-size: .9rem;
+    font-size: .8rem;
+  }
+
+  .calendar {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    right: 3px;
   }
 }
 

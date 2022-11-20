@@ -12,7 +12,6 @@ export default function ListMovies() {
     /* SEARCH*/
     const [query] = useSearchParams();
     const search = query.get("search");
-
     /*Movies API*/
     const [movies, setMovies] = useState([]);
     /*Fx LOADING*/
@@ -45,7 +44,7 @@ export default function ListMovies() {
             dataLength={movies.length}
             next={() => setPage((prevPage) => prevPage + 1)}
             hasMore={hasMore}
-            loader ={<Loading/>}
+            loader={<Loading/>}
             >
             <ul className={styles.grid}>
                 { movies.map ((movie) => (
