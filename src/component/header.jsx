@@ -4,7 +4,7 @@ import { NavIphone } from "./NavIphone";
 import CardPerfil from "./menuPerfil";
 
 import styles from "./comp-css/header.module.css";
-import Search from "./search";
+import SearchDesktop from "./searchDesktop";
 
 export default function Header() {
     return (
@@ -39,7 +39,7 @@ export default function Header() {
                     <Link to="/movies" className={styles.linklogo}>
                         <h1 className={styles.logo}>MovieAC+</h1>
                     </Link>
-                        <Search/>
+                        <SearchDesktop />
                 </div> 
             </nav>
         </header>

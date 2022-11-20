@@ -142,6 +142,12 @@
   margin-left: 2rem;
 }
 
+.exit_icon {
+  font-size: 25px;
+  position: relative;
+  left: .5rem;
+}
+
 .container_menu_perfil_a:hover {
   background-color:rgb(227, 170, 15);
   color: rgb(255, 255, 255);
@@ -380,51 +386,51 @@
   .container_menu_perfil {
     /* background-color: rgb(255, 0, 0); */
     /* display:none; */
-    right: 0rem;
+    right: 1rem;
     top: 4rem;
-    width: 17rem;
-    height: 16rem; 
+    width: 15rem;
+    height: 14rem; 
   }
   
   .container_menu_perfil_list {
     /* background-color:rgb(9, 159, 24); */
     width: 19rem;
-    height: 10rem;
+    height: 8rem;
     right: 2rem;
     padding: 7px;
   }
   
   .container_menu_container_perfil {
     /* background-color:rgb(15, 15, 15); */
-    height: 10rem;
+    height: 8rem;
   }
   
   .container_menu_perfil_circle { 
     /* background:rgb(0, 0, 0); */
-    width: 9rem;
-    height: 7.8rem;
-    top: .6rem ;
+    width: 6rem;
+    height: 6rem;
+    top: .2rem ;
   }
   
   .container_menu_perfil_Name1 {
     /* background-color:rgb(0, 0, 0); */
-    width: 9rem;
+    width: 11rem;
     height: 3.5rem;
     font-size: 1.2rem;
-    margin: 10px 0px 0px 9px;
+    margin: 0px 0px 0px 9px;
     padding: 0 0 0 15px;
   }
   
   .container_menu_perfil_editar_perfil {
     /* background-color:rgba(165, 100, 100, 0.81); */
     margin: 0px 1.5rem 0px 10px;
-    top: 2.5rem;
+    top: 1rem;
     font-size: .9rem;
   }
   
   .container_menu_perfil_type {
     /* background-color:rgba(165, 100, 100, 0.81); */
-    top: 2.5rem;
+    top: 1rem;
     font-size: .9rem;
   }
   
@@ -453,7 +459,7 @@
   
   .container_menu_perfil {
     /* background-color: rgb(255, 0, 0); */
-    right: 0rem;
+    right: 1rem;
     top: 4rem;
     width: 11rem;
     height: 11.5rem; 

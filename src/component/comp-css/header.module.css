@@ -58,14 +58,6 @@
     text-decoration: none;
 }
 
-.search_iphone {
-    display:none;
-}
-
-.search_iphone_menu {
-    display: none
-}
-
 .menu_items {
     order: 2;
     display: flex;
@@ -466,7 +458,6 @@ ul .ul_items {
         height: 2rem;
         line-height: 2rem;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -548,10 +539,6 @@ ul .ul_items {
         background-color:  #E3B505;
     }
 
-    .search_iphone_menu {
-        display: none
-    }
-
     .nav_items_opcions {
         display: none;
     }
@@ -567,8 +554,9 @@ ul .ul_items {
         line-height: 9vh;
         font-size: 1.9rem;
         text-align: center;
+        position: relative;
+        top: 2rem;
     }
-
     
     .ul_items_iphone {
         /* background-color: rgb(4, 252, 235); */
@@ -578,6 +566,8 @@ ul .ul_items {
         width: 100%;
         margin: 0 0 0 1rem;
         padding: 1rem 0;
+        position: relative;
+        top: 2rem;
     }
     
     ul .item_iphone {
@@ -638,71 +628,16 @@ ul .ul_items {
     .navbar_container input[type="checkbox"]:checked ~ .hamburger_lines .line3 {
     transform: rotate(-42deg);
     }
-
-    .search_iphone {
-        background: rgb(0, 0, 0);
-        height: 4vh;
-        width: 40vh;
-        margin: 0rem 0rem;
-        border-radius: 5px;
-        color: rgb(255, 255, 255);
-        border-style: none;
-        padding: 1rem;
-        border:#4e4521;
-        border-style: solid;
-        border-width: 1px;
-        position: absolute;
-        left: 14rem;
-        top: .9rem;
-        width: 15rem;
-        display: block;
-    } 
-    
-    .search_iphone_menu:focus {
-        outline: #E3B505;
-        border-width: 1px;
-        box-shadow: 1px 1px 21px 1px #E3B505;
-        border: 2px solid #E3B505;
-    }
-    .search_iphone_menu::placeholder { color: #6e6e6e; }
-    
-
-    
 }
 
-@media (max-width: 768px) {
-
-    .search_iphone_menu {
-        background-color: rgb(0, 0, 0);
-        height: 4vh;
-        width: 14rem;
-        border-radius: 5px;
-        color: rgb(255, 255, 255);
-        border-style: none;
-        padding: 1rem 1rem;
-        border:#4e4521;
-        border-style: solid;
-        border-width: 1px;
-        position: absolute;
-        left: 4.5rem;
-        top: .9rem;
-        display: block;
-    }
-    
-    .container_menu_iphone {
-        margin-top: 0rem;
-        position: relative;
-        top: 3rem;
-        left: 0rem;
-    }
-}
 
 @media (max-width: 500px) {
 
     .navbar {
         height: 55px;
     }
-        .navbar .menu_items {
+
+    .navbar .menu_items {
         max-width: 230px;
         margin-top: 3.9rem;
     }
@@ -719,7 +654,7 @@ ul .ul_items {
         transform: translate(-100%);
         margin-left: -60px;
         padding-left: 30px;
-        margin-top: 5.3rem;
+        margin-top: 4rem;
     }
 
     .navbar_container .hamburger_lines {
@@ -743,31 +678,12 @@ ul .ul_items {
         font-weight: 500;
     }
 
-    .search_iphone {
-        display: none;
-    }
-
-    .search_iphone_menu {
-        background-color: rgb(0, 0, 0);
-        width: 9rem;
-        left: 4.7rem;
-    }
-
-/*     
-    .search:focus {
-        box-shadow: 0 0 0 .15vw #E3B505;
-        outline: #E3B505;
-        border-width: 1px;
-    }
-    .search::placeholder { color: #6e6e6e; }
-    .search::placeholder:focus { color: #b08d02; }
-     */
-    
     .nav_items_options_iphone {
         background-color: rgb(201, 134, 27);
         height: 8vh;
         line-height: 8vh;
         font-size: 1.7rem;
+        top: 4rem;
     }
     
     .ul_items_iphone {
@@ -778,6 +694,7 @@ ul .ul_items {
         width: 100%;
         margin: 0 0 0 1rem;
         padding: 1rem 0;
+        top: 5rem;
     }
 
     .container_menu_iphone {

@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom";
-import styles from "./comp-css/search.module.css";
+import styles from "./comp-css/searchIphone.module.css";
 
-export default function Search() {
+export default function SearchIphone() {
 
   const [query, setQuery] = useSearchParams();
   const search = query.get("search");
@@ -12,7 +12,7 @@ export default function Search() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input className={styles.search} 
+      <input className={styles.search_iphone_menu} 
         type="search" 
         value={search ?? ""}
         onChange={(e) => {

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import styles from "./comp-css/header.module.css";
+import SearchIphone from "./searchIpone";
 
 export function NavIphone({ title }) {
     return (
         <div>
-            <input className={styles.search_iphone_menu} type="search" placeholder="search"/>
+            <SearchIphone/>
             <details className={styles.container_menu_iphone}>
                 <summary className={styles.nav_items_options_iphone} href="g">{title}</summary>
                 <ul className={styles.ul_items_iphone}>
