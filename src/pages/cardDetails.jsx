@@ -7,6 +7,7 @@ import { RiMovie2Fill } from "react-icons/ri";
 import { BsCalendar3 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 import Loading from "../component/loading";
+import placeholder from "../assets/img/MovieAC-logo-card.svg";
 
 import styles from "./pages.css/cardDetails.module.css"
 
@@ -31,7 +32,7 @@ export default function CardDetails() {
     if (!movie) {
         return null;
     }
-    const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+    const imageUrl = movie.poster_path ? "https://image.tmdb.org/t/p/w500" + movie.poster_path : placeholder;
 
     return (
         <div className={styles.container}>

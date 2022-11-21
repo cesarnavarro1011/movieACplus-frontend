@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import styles from "./comp-css/card.module.css";
 import { AiFillStar } from "react-icons/ai";
 import { BsCalendar3 } from "react-icons/bs";
+import placeholder from "../assets/img/MovieAC-logo-card.svg";
 
 export function Card({movie}) {
-    const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+    const imageUrl = movie.poster_path ? "https://image.tmdb.org/t/p/w300" + movie.poster_path : placeholder;
     return (
         <Link className={styles.link_card_movies} to={"/movies/" + movie.id}>
             <div className={styles.container_cards}>

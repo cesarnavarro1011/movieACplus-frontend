@@ -5,7 +5,6 @@ import { get } from "../utils/httpClient";
 import { Card } from "./card";
 import Loading from "./loading";
 import { Empty } from "../pages/empty";
-
 import styles from "./comp-css/grid.module.css";
 
 export default function ListMovies() {

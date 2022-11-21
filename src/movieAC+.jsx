@@ -11,7 +11,7 @@ export default function MovieAC() {
     <div>
     <Header/>
         <Routes>
-              <Route path="movies" element={<Movies />}/>
+              <Route path="/movies" element={<Movies />}/>
               <Route exact path="movies/:movieid" element={<CardDetails />}/>
               <Route path="session" element={<Session />}/>
               <Route path="*" element={<NotFound />}/>

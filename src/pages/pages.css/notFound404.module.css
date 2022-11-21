@@ -10,10 +10,10 @@
 }
 
 .notFound {
-  background-color: rgba(65, 65, 65, 0.192);
-  width: 60vh;
-  height: 40vh;
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.192);
+  width: 70vh;
+  height: 50vh;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,8 +21,8 @@
   position: relative;
   outline: #E3B505;
   border-width: 1px;
-  box-shadow: 1px 1px 91px 1px #E3B505;
-  border: 2px solid #e3b7055c;
+  box-shadow: 1px 1px 91px 1px #e3b70521;
+  border: 2px solid #e3b705;
 }
 
 .notFound::after {
@@ -55,10 +55,11 @@
 }
 
 .emoji {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   top: .2rem;
   left: .5rem;
+  fill: #E3B505;
 }
 
 .paragraph {

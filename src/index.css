@@ -14,6 +14,16 @@ body {
 
   background-color: #000000;
   color: aliceblue;
+  overflow: auto;
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  display: initial;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color:  #E3B505;
 }
 
 code {
