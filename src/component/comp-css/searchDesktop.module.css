@@ -78,6 +78,8 @@
   .search {
     width: 40vh;
     font-size: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 

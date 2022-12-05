@@ -1,10 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Link} from 'react-router-dom';
+import React, { Router, Link} from 'react-router-dom';
 import { IoExitOutline } from "react-icons/io5";
 
 import styles from "./comp-css/menuPerfil.module.css";
 
 export default function CardPerfil({editPerfil,CloseSession}) {
+
     return (
         <ul className={styles.container_menu_perfil}>
             <li className={styles.container_menu_perfil_list}>
@@ -22,7 +22,7 @@ export default function CardPerfil({editPerfil,CloseSession}) {
         
           {/* <li className={styles.container_menu_perfil_list_option}><img  width="20px" height="20px" src=""/><a className={styles.container_menu_perfil_a} href ="Perreo.php">perreo intensivo ;D</a></li> */}
             <li className={styles.container_menu_perfil_list_option}>
-                    <IoExitOutline className={styles.exit_icon}/>
+                    <Link to="/Session"><IoExitOutline className={styles.exit_icon}/></Link> 
                     <Link className={styles.container_menu_perfil_a} to="/Session">Cerrar Session</Link>
             </li>
         </ul>

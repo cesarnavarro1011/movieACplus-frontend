@@ -49,7 +49,7 @@
 
 .content_session {
   background-color:rgba(219, 161, 15, 0.073);
-  width: 40vh;
+  width: 45vh;
   height: 55vh;
   margin-right: 0vh;
   border-radius: 10px;
@@ -64,7 +64,7 @@
 
 .title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 4rem;
 }
 
 .content_api {
@@ -75,15 +75,14 @@
   width: 100%;
   height: 12vh;
   gap: 2vh;
-
 }
 
 .api {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 14vh;
-  height: 5vh;
+  width: 16vh;
+  height: 6vh;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
@@ -98,6 +97,7 @@
 .icon_facebook {
   margin-right: .5rem;
   order: -1;
+  font-size: 2.5rem;
 }
 
 .google {
@@ -106,10 +106,10 @@
 }
 
 .icon_google {
-  font-size: 20px;
-  margin: .2rem .2rem 0 0rem;
+  font-size: 22px;
+  margin: .1rem .2rem 0 0rem;
   order: -1;
-  font-size: 20px
+  font-size: 3rem;
 }
 
 .form_session {
@@ -121,21 +121,22 @@
   text-align: center;
   justify-content: center;
   width: 100%;
-  width: 30vh;
+  width: 35vh;
   height: 31vh;
   border-top: 2px solid #ffffff2c;
 }
 
 .input_login {
-  width: 23.5vh;
-  height: 1.7vh;
+  width: 30vh;
+  height: 2.4vh;
   border-radius: 5px;
   background: #00000073;
   border-style: none;
   color: rgb(255, 255, 255);
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 1rem 0;
   border: 1px solid #e3b70572;
+  font-size: 2.5rem;
 }
 
 .facebook:focus {
@@ -151,7 +152,7 @@
 }
 
 .input_login_down {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .input_login:focus {
@@ -170,8 +171,8 @@
 
 .button_login,
 .button_login::after {
-padding: 16px 20px;
-font-size: 18px;
+padding: 45px 70px;
+font-size: 2.4rem;
 background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
 border: 0;
 color: rgb(0, 0, 0);
@@ -273,6 +274,7 @@ button:hover::after {
   justify-content: center;
   align-items: center;
   margin-top: .5rem;
+  font-size: 2.5rem;
 }
 
 .a_recuperar {
@@ -284,7 +286,510 @@ button:hover::after {
   color: #E3B505; 
 }
 
-@media screen and (max-width: 1366px ) {
+.container_register_modal_ {
+  background-color: rgba(0, 0, 0, 0.571);
+  width: 220vh;
+  height: 200vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.subcontainer_register {
+  background-color: red;
+  width: 45vh;
+  height: 55vh;
+  position: absolute;
+  right: 50vh;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.container_register_and_closed {
+  background-color: rgb(81, 255, 0);
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.text_register {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  bottom: 2rem;
+  width: 90%;
+}
+
+.closed {
+  background-color: rgb(255, 187, 0);
+  width: 10%;
+  font-size: 1.5rem;
+  position: absolute;
+  right: .9rem;
+  height: 1vh;
+  line-height: 1vh;
+}
+
+.form_register {
+  background-color: rgb(255, 255, 0);
+  width: 100%;
+  height: 45vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.data_person {
+  background-color: goldenrod;
+  width: 20vh;
+  display: inline-block;
+  height: 9vh;
+}
+
+.label {
+  background-color: #00ff1e;
+  display: flex;
+  flex-direction: column;
+  color:rgb(0, 0, 0);
+  width: 19vh;
+  font-size: 2rem;
+  text-align: start;
+  margin-left: 2%;
+}
+
+.input_register {
+  /* background-color: blue; */
+  background: #00000073;
+  color: rgb(255, 255, 255);
+  height: 5vh;
+  width: 16vh;
+  padding: 0 1.5rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid #e3b70572;
+}
+
+.input_register::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.input_register:focus {
+  box-shadow: 0 0 0 .15vw #E3B505;
+  outline: #E3B505;
+}
+.input_register::placeholder { color: #ffffff; }
+.input_register::placeholder:focus { color: #b08d02; }
+
+.termins_and_condicions {
+  position: relative;
+  top: 1vh;
+  font-size: 1.3rem;
+}
+
+.button_register {
+  margin-top: 2vh;
+  width: 13rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 2560px) { 
+
+  .content_session {
+    width: 45vh;
+    height: 60vh;
+    top: 31vh;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  
+  .content_api {
+    height: 12vh;
+  }
+  
+  .api {
+    width: 16vh;
+    height: 6vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.9vh;
+  }
+  
+  
+  .icon_facebook {
+    margin-right: .5rem;
+    font-size: 2.2rem;
+  }
+  
+  
+  .icon_google {
+    font-size: 2.6rem;
+  }
+  
+  .form_session {
+    width: 35vh;
+    height: 35vh;
+    border-top: 2px solid #ffffff2c;
+  }
+  
+  .input_login {
+    width: 30vh;
+    height: 2.4vh;
+    border-radius: 5px;
+    background: #00000073;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #e3b70572;
+    font-size: 2rem;
+  }
+  
+  .input_login_down {
+    margin-bottom: 4rem;
+  }
+  
+  .form_button {
+    width: 100%;
+  }
+  
+  .button_login,
+  .button_login::after {
+  padding: 20px 20px;
+  font-size: 2rem;
+  }
+  
+  .ul_opcions_recuperacion {
+    /* background-color: red; */
+    font-size: 1.9rem;
+  }
+  
+  .a_recuperar {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: .5rem;
+  }
+  .a_recuperar:hover {
+    color: #E3B505; 
+  }
+  
+  .container_register_modal_ {
+    background-color: rgba(0, 0, 0, 0.571);
+    width: 220vh;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .subcontainer_register {
+    background-color: red;
+    width: 45vh;
+    height: 55vh;
+    position: absolute;
+    right: 50vh;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .container_register_and_closed {
+    background-color: rgb(81, 255, 0);
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text_register {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    bottom: 2rem;
+    width: 90%;
+  }
+  
+  .closed {
+    background-color: rgb(255, 187, 0);
+    width: 10%;
+    font-size: 1.5rem;
+    position: absolute;
+    right: .9rem;
+    height: 1vh;
+    line-height: 1vh;
+  }
+  
+  .form_register {
+    background-color: rgb(255, 255, 0);
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .data_person {
+    background-color: goldenrod;
+    width: 20vh;
+    display: inline-block;
+    height: 9vh;
+  }
+  
+  .label {
+    background-color: #00ff1e;
+    display: flex;
+    flex-direction: column;
+    color:rgb(0, 0, 0);
+    width: 19vh;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 2%;
+  }
+  
+  .input_register {
+    /* background-color: blue; */
+    background: #00000073;
+    color: rgb(255, 255, 255);
+    height: 5vh;
+    width: 16vh;
+    padding: 0 1.5rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e3b70572;
+  }
+  
+  .input_register::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  
+  .input_register:focus {
+    box-shadow: 0 0 0 .15vw #E3B505;
+    outline: #E3B505;
+  }
+  .input_register::placeholder { color: #ffffff; }
+  .input_register::placeholder:focus { color: #b08d02; }
+  
+  .termins_and_condicions {
+    position: relative;
+    top: 1vh;
+    font-size: 1.3rem;
+  }
+  
+  .button_register {
+    margin-top: 2vh;
+    width: 13rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1980px) { 
+
+  .content_session {
+    width: 45vh;
+    height: 60vh;
+    top: 31vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  
+  .content_api {
+    height: 12vh;
+  }
+  
+  .api {
+    width: 16vh;
+    height: 6vh;
+    font-size: 1.8vh;
+  }
+  
+  .icon_facebook {
+    margin-right: .5rem;
+    font-size: 1.5rem;
+  }
+  
+  .icon_google {
+    font-size: 2rem;
+  }
+  
+  .form_session {
+    width: 35vh;
+    height: 35vh;
+    border-top: 2px solid #ffffff2c;
+  }
+  
+  .input_login {
+    width: 25vh;
+    height: 1vh;
+    border-radius: 5px;
+    background: #00000073;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin: .7rem 0;
+    font-size: 1rem;
+  }
+  
+  .input_login_down {
+    margin-bottom: 3rem;
+  }
+  
+  .form_button {
+    width: 100%;
+  }
+  
+  .button_login,
+  .button_login::after {
+  padding: 15px 15px;
+  font-size: 1.2rem;
+  }
+  
+  .ul_opcions_recuperacion {
+    /* background-color: red; */
+    font-size: 1.2rem;
+  }
+  
+  .a_recuperar {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: .5rem;
+  }
+  .a_recuperar:hover {
+    color: #E3B505; 
+  }
+  
+  .container_register_modal_ {
+    background-color: rgba(0, 0, 0, 0.571);
+    width: 220vh;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .subcontainer_register {
+    background-color: red;
+    width: 45vh;
+    height: 55vh;
+    position: absolute;
+    right: 50vh;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .container_register_and_closed {
+    background-color: rgb(81, 255, 0);
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text_register {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    bottom: 2rem;
+    width: 90%;
+  }
+  
+  .closed {
+    background-color: rgb(255, 187, 0);
+    width: 10%;
+    font-size: 1.5rem;
+    position: absolute;
+    right: .9rem;
+    height: 1vh;
+    line-height: 1vh;
+  }
+  
+  .form_register {
+    background-color: rgb(255, 255, 0);
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .data_person {
+    background-color: goldenrod;
+    width: 20vh;
+    display: inline-block;
+    height: 9vh;
+  }
+  
+  .label {
+    background-color: #00ff1e;
+    display: flex;
+    flex-direction: column;
+    color:rgb(0, 0, 0);
+    width: 19vh;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 2%;
+  }
+  
+  .input_register {
+    /* background-color: blue; */
+    background: #00000073;
+    color: rgb(255, 255, 255);
+    height: 5vh;
+    width: 16vh;
+    padding: 0 1.5rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e3b70572;
+  }
+  
+  .input_register::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  
+  .input_register:focus {
+    box-shadow: 0 0 0 .15vw #E3B505;
+    outline: #E3B505;
+  }
+  .input_register::placeholder { color: #ffffff; }
+  .input_register::placeholder:focus { color: #b08d02; }
+  
+  .termins_and_condicions {
+    position: relative;
+    top: 1vh;
+    font-size: 1.3rem;
+  }
+  
+  .button_register {
+    margin-top: 2vh;
+    width: 13rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1466px ) {
 
   .container {
     /* background-color:rgb(12, 1, 104); */
@@ -307,7 +812,7 @@ button:hover::after {
   
   .title {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   
   .content_api {
@@ -319,14 +824,13 @@ button:hover::after {
     height: 12vh;
     gap: 2vh;
     font-size: 14px;
-  
   }
   
   .api {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 15vh;
+    width: 18vh;
     height: 6vh;
     border-radius: 5px;
     text-decoration: none;
@@ -358,8 +862,8 @@ button:hover::after {
   }
 
   .input_login {
-    width: 25vh;
-    height: 0vh;
+    width: 30vh;
+    height: 2vh;
     margin: .4rem .2rem;
     border-radius: 5px;
     background: #00000073;
@@ -382,7 +886,7 @@ button:hover::after {
   }
   
   .input_login_down {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .input_login:focus {
@@ -395,8 +899,8 @@ button:hover::after {
 
   .button_login,
   .button_login::after {
-  padding: 12px 9px;
-  font-size: 12px;
+  padding: 20px 25px;
+  font-size: 14px;
   background: linear-gradient(45deg, transparent 5%, #ffcc00 5%);
   border: 0;
   color: rgb(0, 0, 0);
@@ -449,29 +953,41 @@ button:hover::after {
   }
   
   .container_session {
-    background-color: rgba(0, 0, 0, 0.543);
+    /* background-color: rgba(0, 0, 0, 0.543); */
     width: 60vh;
     height: 130vh;
   }
   
   .content_session {
-    background-color:rgba(255, 255, 255, 0.073);
-    width: 45vh;
-    height: 59vh;
+    width: 50vh;
+    height: 65vh;
+    margin-top: 2rem;
   }
   
   .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   
   .content_api {
     /* background-color: yellow; */
-    font-size: 14px;
+    width: 100%;
+    margin: .5rem 0;
   }
   
   .api {
-    width: 15vh;
-    height: 6vh;
+    font-size: 14px;
+    width: 20vh;
+    height: 8vh;
+  }
+
+  .icon_facebook {
+    margin-right: .5rem;
+    font-size: 20px
+  }
+
+  .icon_google {
+    margin: .1rem .2rem 0 0rem;
+    font-size: 22px
   }
   
   .form_session {
@@ -480,7 +996,7 @@ button:hover::after {
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 35.5vh;
+    height: 39vh;
     border-top: 2px solid #ffffff2c;
   }
   
@@ -489,14 +1005,14 @@ button:hover::after {
   }
 
   .input_login {
-    width: 25vh;
-    height: 0vh;
-    margin: .4rem .2rem;
+    width: 35vh;
+    height: 5vh;
+    margin: .5rem .2rem;
     border-radius: 5px;
     background: #00000073;
     border-style: none;
     color: rgb(255, 255, 255);
-    padding: 1rem;
+    padding: .2rem .5rem;
     border: 1px solid #e3b70572;
   }
   
@@ -513,7 +1029,7 @@ button:hover::after {
   }
   
   .input_login_down {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .input_login:focus {
@@ -556,8 +1072,7 @@ button:hover::after {
     background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff0101 5%);
     text-shadow: -3px -3px 0px #00ff1e, 3px 3px 0px #00e6f6;
     clip-path: var(--slice-0);
-  }
-  
+  } 
 
   .ul_opcions_recuperacion {
     /* background-color: red; */
@@ -569,6 +1084,89 @@ button:hover::after {
     align-items: center;
     margin-top: .5rem;
   }
+
+  .subcontainer_register {
+    background-color: red;
+    width: 70vh;
+    height: 85vh;
+    top: 20vh;
+  }
+  
+  .text_register {
+    background-color: rgb(0, 238, 255);
+    font-size: 1.8rem;
+    position: static;
+  }
+
+  .closed {
+    background-color: rgb(255, 187, 0);
+    font-size: 1.9rem;
+  }
+  
+  .form_register {
+    background-color: rgb(255, 255, 0);
+    width: 100%;
+    height: 65vh;
+    text-align: center;
+    padding: .5rem 0;
+  }
+  
+  .data_person {
+    background-color: goldenrod;
+    width: 32vh;
+    display: inline-block;
+    height: 12vh;
+  }
+  
+  .label {
+    background-color: #00ff1e;
+    display: flex;
+    flex-direction: column;
+    color:rgb(0, 0, 0);
+    width: 100%;
+    font-size: .9rem;
+    margin-left: 0;
+  }
+  
+  .input_register {
+    /* background-color: blue; */
+    background: #00000073;
+    color: rgb(255, 255, 255);
+    height: 5vh;
+    width: 27vh;
+    padding: 0 .5rem;
+    font-size: .9rem;
+    margin: .4rem 0;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e3b70572;
+  }
+  
+  .input_register::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+  }
+  
+  .input_register:focus {
+    box-shadow: 0 0 0 .15vw #E3B505;
+    outline: #E3B505;
+  }
+  .input_register::placeholder { color: #ffffff; }
+  .input_register::placeholder:focus { color: #b08d02; }
+  
+  .termins_and_condicions {
+    position: relative;
+    top: 1vh;
+    font-size: .7rem;
+  }
+  
+  .button_register {
+    margin-top: 5vh;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: .9rem;
+  }
+  
 }
 
 @media screen and (max-width: 1024px ) {
@@ -598,14 +1196,22 @@ button:hover::after {
   .content_api {
     gap: 2vh;
     font-size: 14px;
-  
   }
   
   .api {
-    width: 15vh;
-    height: 6vh;
+    width: 17vh;
+    height: 7vh;
   }
-  
+
+  .icon_facebook {
+    margin-right: .5rem;
+    font-size: 15px
+  }
+
+  .icon_google {
+    margin: .1rem .2rem 0 0rem;
+    font-size: 18px
+  }
   
   .form_session {
     display: flex;
@@ -620,8 +1226,7 @@ button:hover::after {
   }
 
   .input_login {
-    width: 25vh;
-    height: 0vh;
+    width: 30vh;
   }
   
   .input_login_down {
@@ -671,15 +1276,19 @@ button:hover::after {
   .api {
     width: 14vh;
     height: 6.5vh;
-    font-size: 2.1vh;
+    font-size: 2vh;
+  }
+
+  .icon_facebook {
+    font-size: 1.7rem;
+  }
+  
+  .icon_google {
+    font-size: 2rem;
   }
   
   .form_session {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+    height: 32vh;
   }
   
   .inputs {
@@ -707,11 +1316,6 @@ button:hover::after {
   .button_login::after {
   padding: 2.1vh 2.5vh;
   font-size: 1.7vh;
-  margin: 0 1.1rem;
-  }
-  
-  .button_login::after {
-    position: absolute;
   }
   
   .ul_opcions_recuperacion {
@@ -736,10 +1340,9 @@ button:hover::after {
   }
   
   .content_session {
-    width: 40vh;
+    width: 45vh;
     height: 65vh;
     top: 25vh;
-
   }
   
   .title {
@@ -748,32 +1351,30 @@ button:hover::after {
   
   .content_api {
     font-size: 2.5vh;
-    gap: 3.1vh;
+    gap: 3vh;
   }
   
   .api {
-    width: 14vh;
+    width: 16vh;
     height: 6.5vh;
     font-size: 2.1vh;
   }
   
-  .form_session {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  .icon_facebook {
+    font-size: 1.1rem;
   }
   
-  .inputs {
-    margin-top: .4rem;
+  .icon_google {
+    font-size: 1.5rem;
+  }
+  
+  .form_session {
+    height: auto;
   }
 
   .input_login {
-    width: 25vh;
-    height: .5vh;
-    margin: .7rem .2rem;
-    padding: 1.3rem;
+    width: 30vh;
+    font-size: 1rem;
   }
   
   .input_login_down {
@@ -788,18 +1389,9 @@ button:hover::after {
 
   .button_login,
   .button_login::after {
-  padding: 2.1vh 2.5vh;
-  font-size: 1.7vh;
+  padding: 2.0vh 2.5vh;
+  font-size: 2vh;
   margin: 0 1.1rem;
-  }
-  
-  .button_login::after {
-    position: absolute;
-  }
-  
-  .ul_opcions_recuperacion {
-    width: 100%;
-    height: 10vh;
   }
 }
 
@@ -817,38 +1409,28 @@ button:hover::after {
   }
   
   .content_session {
-    width: 40vh;
-    height: auto;
-    top: 25vh;
+    width: 45vh;
+    height: 65vh;
   }
   
   .title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   
   .content_api {
-    font-size: 2.5vh;
-    height: 9vh;
+    font-size: 2vh;
+    height: 12vh;
     gap: 3vh;
   }
   
   .api {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15vh;
-    height: 6vh;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
+    width: 17vh;
+    height: 7vh;
   }
   
   .form_session {
-    display: flex;
-    text-align: center;
-    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 40vh;
   }
   
   .inputs {
@@ -856,7 +1438,7 @@ button:hover::after {
   }
 
   .input_login {
-    width: 24vh;
+    width: 30vh;
     height: .5vh;
     margin: .7rem .2rem;
     padding: 1.3rem;
@@ -886,6 +1468,7 @@ button:hover::after {
   .ul_opcions_recuperacion {
     width: 100%;
     height: 10vh;
+    font-size: 1rem;
   }
 }
 
@@ -918,9 +1501,7 @@ button:hover::after {
   }
   
   .api {
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
+    font-size: .9rem;
     display: flex;
     width: 21vh;
     height: 10vh;
